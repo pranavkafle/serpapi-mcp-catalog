@@ -1,0 +1,712 @@
+{
+  "amazon": {
+    "amazon_domain": "amazon.com",
+    "device": "desktop",
+    "engine": "amazon",
+    "language": "en_US",
+    "node": "2238192011"
+  },
+  "amazon_product": {
+    "amazon_domain": "amazon.com",
+    "asin": "B072MQ5BRX",
+    "device": "desktop",
+    "engine": "amazon_product"
+  },
+  "apple_app_store": {
+    "country": "us",
+    "device": "mobile",
+    "engine": "apple_app_store",
+    "lang": "en-us",
+    "num": "10",
+    "page": "0",
+    "term": "TestFlight"
+  },
+  "apple_product": {
+    "country": "us",
+    "engine": "apple_product",
+    "product_id": "577586159",
+    "type": "app"
+  },
+  "apple_reviews": {
+    "country": "us",
+    "engine": "apple_reviews",
+    "page": "1",
+    "product_id": "534220544"
+  },
+  "baidu": {
+    "device": "desktop",
+    "engine": "baidu",
+    "f": "8",
+    "oq": "coffee",
+    "pn": "10",
+    "q": "coffee",
+    "num": "3"
+  },
+  "baidu_news": {
+    "device": "desktop",
+    "engine": "baidu_news",
+    "q": "\u4e30\u6536\u6545\u4e8b\u592f\u5b9e\u6211\u4eec\u7684\u5e95\u6c14",
+    "rtt": "1",
+    "num": "3"
+  },
+  "bing": {
+    "device": "desktop",
+    "engine": "bing",
+    "first": "5",
+    "q": "Coffee",
+    "num": "3"
+  },
+  "bing_copilot": {
+    "engine": "bing_copilot",
+    "q": "news"
+  },
+  "bing_images": {
+    "device": "desktop",
+    "engine": "bing_images",
+    "q": "1 Cup Coffee",
+    "num": "3"
+  },
+  "bing_maps": {
+    "cp": "30.307989~-97.749943",
+    "engine": "bing_maps",
+    "q": "Coffee shop",
+    "num": "3"
+  },
+  "bing_news": {
+    "engine": "bing_news",
+    "q": "world news",
+    "num": "3",
+    "mkt": "en-US"
+  },
+  "bing_product": {
+    "engine": "bing_product",
+    "product_token": "pc13NHicdY3BbsIwEETVjyES8oUaEXrJAWgJqBQiwg-YeEOsWF53vRblV_s1jRIOPcBlR_tmRvP7Mv7O9qYFsbSqasWnsTY0yEKKHShugETpQLVAIamN5U6zUIFTZHA0VSMpX-fdEZfTzcMdyB5s9fDKVM5nMp1M32bp3dio0AzmpCe5xbOyh7oG2urwuLaI1Qodww_n0eh_7Zww-g_Hhm_PJvfoSo8uIIHuV4bYiSJ0knhCHSv26gIZdyxZH45fWbkpivciORNew8D_AJZIW7o"
+  },
+  "bing_reverse_image": {
+    "cab": "0.8910936",
+    "cal": "0.2167084",
+    "car": "0.7601556",
+    "cat": "0",
+    "engine": "bing_reverse_image",
+    "image_url": "https://i.imgur.com/mmAwrdL.jpeg"
+  },
+  "bing_shopping": {
+    "device": "desktop",
+    "engine": "bing_shopping",
+    "filters": "gsfilter%3A%22MSxCYXNpYywyPTEsVHw7%22+scenario%3A%2215%22",
+    "mkt": "en-us",
+    "q": "iphone 15",
+    "num": "3"
+  },
+  "bing_videos": {
+    "engine": "bing_videos",
+    "q": "coffee shops",
+    "num": "3"
+  },
+  "duckduckgo": {
+    "engine": "duckduckgo",
+    "kl": "us-en",
+    "q": "apple",
+    "start": "27",
+    "num": "3"
+  },
+  "duckduckgo_light": {
+    "engine": "duckduckgo_light",
+    "kl": "us-en",
+    "next_page_token": "eyJxIjoiQ29mZmVlIiwicyI6IjEwIiwibmV4dFBhcmFtcyI6IiIsInYiOiJsIiwibyI6Impzb24iLCJkYyI6IjEzIiwiYXBpIjoiZC5qcyIsInZxZCI6IjQtMzE5NDEwNzE2NjI3NDM1NDk2NTkyMjEzNjA3Mzg3MTQ0NDk4MzUxIiwia2wiOiJ1cy1lbiJ9",
+    "q": "Coffee",
+    "num": "3"
+  },
+  "duckduckgo_maps": {
+    "engine": "duckduckgo_maps",
+    "q": "coffee shops",
+    "num": "3"
+  },
+  "duckduckgo_news": {
+    "engine": "duckduckgo_news",
+    "kl": "us-en",
+    "q": "apple",
+    "start": "30",
+    "num": "3"
+  },
+  "ebay": {
+    "_nkw": "Coffee",
+    "_pgn": "2",
+    "ebay_domain": "ebay.com",
+    "engine": "ebay"
+  },
+  "ebay_product": {
+    "engine": "ebay_product",
+    "product_id": "186585062862"
+  },
+  "facebook_profile": {
+    "engine": "facebook_profile",
+    "profile_id": "Modernatx"
+  },
+  "google": {
+    "device": "desktop",
+    "engine": "google",
+    "gl": "us",
+    "google_domain": "google.com",
+    "hl": "en",
+    "location": "Austin, Texas, United States",
+    "lsig": "AB86z5Vdw6C2pJpM0xQ6JUx2KONU",
+    "ludocid": "11265938073076301333",
+    "q": "coffee",
+    "tbm": "lcl",
+    "num": "3"
+  },
+  "google_about_this_result": {
+    "engine": "google_about_this_result",
+    "google_domain": "google.com",
+    "q": "About https://www.globaldata.com/company-profile/starbucks-corp/",
+    "num": "3"
+  },
+  "google_ads_transparency_center": {
+    "engine": "google_ads_transparency_center",
+    "advertiser_id": "AR17828074650563772417",
+    "num": 5
+  },
+  "google_ads_transparency_center_ad_details": {
+    "engine": "google_ads_transparency_center_ad_details",
+    "advertiser_id": "AR12039459359856525313",
+    "creative_id": "CR11382217505440268289"
+  },
+  "google_ai_mode": {
+    "engine": "google_ai_mode",
+    "page_token": "eyJlaSI6bnVsbCwicHJvZHVjdGlkIjpudWxsLCJjYXRhbG9naWQiOiI3NTgxMDU0MTk2MjMwNzg0NTYwIiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMTI0NDM4Mzc3Mjk1NjMwMzM3OTgiLCJpbWFnZURvY2lkIjoiNDc0NDMzNzkxMTg3NTk5Mjk4MSIsInJkcyI6IlBDXzEyODU4NTU3ODIxOTUwNDUyODk2fFBST0RfUENfMTI4NTg1NTc4MjE5NTA0NTI4OTYiLCJxdWVyeSI6IkxldmkramVhbnMiLCJncGNpZCI6IjEyODU4NTU3ODIxOTUwNDUyODk2IiwibWlkIjoiNTc2NDYyOTAwMTU1OTM2OTQ0IiwicHZ0IjoiYSIsInV1bGUiOm51bGwsImdsIjpudWxsLCJobCI6bnVsbH0=",
+    "q": "coffee shops",
+    "num": "3"
+  },
+  "google_ai_overview": {
+    "engine": "google_ai_overview",
+    "page_token": "KIVu-nictZPdjrI4GMeTPdkrWU8cFXV0dBKyKbUgiigy6OgJQawFQapUBpmzvZe9qr2aLYzO6I5vsm-yW0Ip7dPn4__L88efoR8Ff_36i3c87tlzrZamaZVQSkJcdemu5rAscmsbGrLY9X5PkhCLaRkC1VCh6hivs_e1EiaaPA2xIr9r8ixxXqfhEkova0UWlq-jEgnFhJW8UMRRKXsTmyWXiUIJ-2JTJ2jZxnTINvK-8zgJBtEiM4JSEVG0Vw7DW57Qactqdo1PwW_NHv-psiqObMusqpNU7ZM-OFlWFbNWdVxzdtwE_NsBv5YSJMblF5K71vwcgkAqlvk0569vIPXsx0D5pALt0Tbd6yAqUD4jJfxVZYAu0dN8gc6H9MfREVKlyu2WWszcgQx4zCKlD0dGnmJ_wEu6mI5BBfQJHkknc_69LGK8gP5e65BzXTeDDEziu0wH0KitCRdXqK1i_qnXYpZLDV-6ApW7TlzvmoJE585mMs2icNfe4-28-dYBDwVGl31yZNcc9acEefre8kxQ1apS_YLQGFMuZZ7OAPSl_T0cXAD0hZDXTPjDUMp3ehlfAj3fAL2Uu3G55eJyL_isTbLgl7NcPpRLJ5-lLdwWMCDKD-E4FyvHE3CEfTrN0JkAzC8qCliQQ35jiMk5pQ9FFx-6WoU5gmBiqJIKJBW6eRflSYaFMTpXQhDwB8EtQgDMuyJcj-EP9iVwh5nSSA9O3PXh-MWakaC52oRuJREk3dxcmNHd6qeaz_1_uHq8NZMzV3if621rEmkOL62Za4KMnKuhX7XmmesIKAieuSZXXOFPcEXWKG_N71zTgitvTatgm3M1tv_k-l-1ZoEXf3xu-zTZkm_92obr02LIdCKkM_9oyVJMuo2t5Wmx8WBvdsfnfUzJg-2vn6XG4JitSwfRo2l5TTErO_GxnNI4KPtR2YnWMfXXpV0YU1FwWvG7NyOVXlyJvK129AUN6TFI3JPk4MZ4OfLdKNzoShtnpl3RfNxij748svedxMtmmI3e-gc6kgJFVye-qg48j7Rwo71OcbA7dA9-NBe2o2napHMzmuMFQWqr9zSVtJXmKbbej73jI7XHPaymnfBdEIqsmPg6RI_L1URaVmiJuY6N2ZtYb3U3zSen3mjV611h0y3tyDHbi_W_AU9HHA0"
+  },
+  "google_autocomplete": {
+    "engine": "google_autocomplete",
+    "q": "coffee near me",
+    "num": "3"
+  },
+  "google_events": {
+    "data": "!4m2!3m1!1s0x8644b51226ee594b:0x94c03421174f98a6",
+    "engine": "google_events",
+    "gl": "us",
+    "google_domain": "google.com",
+    "hl": "en",
+    "q": "Events in Austin",
+    "type": "place",
+    "num": "3"
+  },
+  "google_finance": {
+    "engine": "google_finance",
+    "hl": "en",
+    "q": ".DJI:INDEXDJX",
+    "num": "3"
+  },
+  "google_finance_markets": {
+    "engine": "google_finance_markets",
+    "hl": "en",
+    "index_market": "americas",
+    "trend": "indexes"
+  },
+  "google_flights": {
+    "engine": "google_flights",
+    "departure_id": "SFO",
+    "arrival_id": "LHR",
+    "outbound_date": "2026-02-11",
+    "return_date": "2026-02-18",
+    "adults": "1"
+  },
+  "google_forums": {
+    "device": "desktop",
+    "engine": "google_forums",
+    "gl": "us",
+    "hl": "en",
+    "q": "How to make the best coffee in the world",
+    "num": "3"
+  },
+  "google_hotels": {
+    "adults": "2",
+    "check_in_date": "2026-01-27",
+    "check_out_date": "2026-01-30",
+    "children": "0",
+    "currency": "USD",
+    "engine": "google_hotels",
+    "gl": "us",
+    "hl": "en",
+    "property_token": "CgsIubu64M2bpKf9ARAB",
+    "q": "bali Resorts",
+    "num": "3"
+  },
+  "google_hotels_autocomplete": {
+    "adults": "2",
+    "check_in_date": "2026-07-17",
+    "check_out_date": "2026-07-18",
+    "children": "0",
+    "currency": "USD",
+    "engine": "google_hotels_autocomplete",
+    "gl": "us",
+    "hl": "en",
+    "q": "coffee shops",
+    "num": "3"
+  },
+  "google_images": {
+    "device": "desktop",
+    "engine": "google_images",
+    "gl": "us",
+    "google_domain": "google.com",
+    "hl": "en",
+    "location": "Austin, TX, Texas, United States",
+    "q": "Coffee",
+    "uds": "AMwkrPs55Qr38c7pW3nP4Vwy_BHvXIxraOqxTMA9ACbDPOXbFTlKNauvtpL9slQHqNq0hKsoLUJrfTC-Zmotk3ztIfovjn0XvRrmJkbPU7kg45ttFIyVaxdqGYsEnfj7C5gkddQq1M4IxgbnEx5dU9BamP6kD8CBFitKjMP9NB91Y6RYxAkfoqrEOktjO86neAjw0DgejaLpj4U6_iccqwUAiwMe4njQ29FBvz_6mtjp_l56Atpq2g1OBH_qsKY5oSzvfrVTaw0CTbPWS1HijnD-eX1OZHT2yOg9HY2HFdgILaI-BHSW70jRaWtXbaeNVigw_Jn_z7ooVNnSP-xzJExCr4cqkwa3VQ",
+    "num": "3"
+  },
+  "google_images_light": {
+    "device": "desktop",
+    "engine": "google_images_light",
+    "gl": "us",
+    "google_domain": "google.com",
+    "hl": "en",
+    "q": "Coffee",
+    "start": "10",
+    "num": "3"
+  },
+  "google_images_related_content": {
+    "related_content_id": "Y0hoQW1Kcnc4RXRiV01cIixcIlU2b0pNbkYtZWVWVEFN",
+    "engine": "google_images_related_content",
+    "gl": "us",
+    "hl": "en",
+    "q": "iphone",
+    "num": "3"
+  },
+  "google_immersive_product": {
+    "engine": "google_immersive_product",
+    "page_token": "eyJlaSI6Im5ZVmxaOXVVTDY2X3A4NFBqTnZELUFjIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNTE1NDU2NTc1NTc5MzcxMDY3NSIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjI1MDkyMjcwMDUzMjk2NzQwODMiLCJpbWFnZURvY2lkIjoiMTYzOTg5MjU0MDcwMDU4MDA1NTQiLCJyZHMiOiJQQ18zNDg4MDE0MTg3ODgxNzc5NjU0fFBST0RfUENfMzQ4ODAxNDE4Nzg4MTc3OTY1NCIsInF1ZXJ5IjoibGcrdHYiLCJncGNpZCI6IjM0ODgwMTQxODc4ODE3Nzk2NTQiLCJtaWQiOiI1NzY0NjI3ODM3Nzc5MTUzMTMiLCJwdnQiOiJoZyIsInV1bGUiOm51bGwsInB2ZiI6IkVnZ0lzdWRXRUxQblZnIn0="
+  },
+  "google_jobs": {
+    "engine": "google_jobs",
+    "google_domain": "google.com",
+    "q": "barista",
+    "uds": "ADvngMjvPWL3d2w2-NRjpDFznBOP3xxosS7YT_2xCvlt45LK1vZGmaBSrBHeT9vdde3uTo1khNT0q73g2p67AqotajIlq30MpwzWQz4b_-pkXOdJoHLLE3KboJWrSB-Ra2PwxyW_tfwx",
+    "num": "3"
+  },
+  "google_jobs_listing": {
+    "engine": "google_jobs_listing",
+    "q": "eyJqb2JfdGl0bGUiOiJCYXJpc3RhLCBVTiBDYWZlIChUZW1wb3JhcnkpIC0gTWlsbGVubml1bSBIaWx0b24gTmV3IFlvcmsgT25lIFVOIFBsYXphIiwiY29tcGFueV9uYW1lIjoiSGlsdG9uIiwiYWRkcmVzc19jaXR5IjoiTmV3IFlvcmssIE5ZIiwiaHRpZG9jaWQiOiJKMm1qbjc1Mmg1VE1RSjBlQUFBQUFBPT0ifQ=="
+  },
+  "google_lens": {
+    "engine": "google_lens",
+    "type": "exact_matches",
+    "url": "https://i.imgur.com/HBrB8p0.png"
+  },
+  "google_lens_image_sources": {
+    "engine": "google_lens_image_sources",
+    "page_token": "NGE1MjU3YmYtYjU2OC00OWRhLWE2MTAtNGMwMzUyZDI4MWQx",
+    "hl": "en"
+  },
+  "google_light": {
+    "device": "desktop",
+    "engine": "google_light",
+    "gl": "us",
+    "google_domain": "google.com",
+    "hl": "en",
+    "q": "Coffee near me",
+    "num": "3"
+  },
+  "google_local": {
+    "device": "desktop",
+    "engine": "google_local",
+    "gl": "us",
+    "google_domain": "google.com",
+    "hl": "en",
+    "location": "New York, New York, United States",
+    "ludocid": "14482539134301609407",
+    "q": "Coffee",
+    "num": "3"
+  },
+  "google_local_services": {
+    "bid": "2517727928",
+    "cid": "327189293",
+    "data_cid": "6745062158417646970",
+    "engine": "google_local_services",
+    "hl": "en",
+    "pid": "2521525020",
+    "q": "electrician",
+    "num": "3"
+  },
+  "google_maps": {
+    "engine": "google_maps",
+    "google_domain": "google.com",
+    "hl": "en",
+    "place_id": "ChIJifIePKtZwokRVZ-UdRGkZzs",
+    "type": "all"
+  },
+  "google_maps_autocomplete": {
+    "engine": "google_maps_autocomplete",
+    "gl": "us",
+    "ll": "@40.7455096,-74.0083012,14z",
+    "q": "cafe",
+    "num": "3"
+  },
+  "google_maps_contributor_reviews": {
+    "engine": "google_maps_contributor_reviews",
+    "contributor_id": "110382514725174877672",
+    "hl": "en",
+    "gl": "us",
+    "num": 10
+  },
+  "google_maps_directions": {
+    "engine": "google_maps_directions",
+    "start_addr": "Austin, TX",
+    "end_addr": "Dallas, TX"
+  },
+  "google_maps_photo_meta": {
+    "engine": "google_maps_photo_meta",
+    "data_id": "CIABIhDT46z4579RGOdKcM1JRBnw",
+    "hl": "en",
+    "gl": "us"
+  },
+  "google_maps_photos": {
+    "data_id": "0x89c25998e556791b:0xbdcd67f46e37b16d",
+    "engine": "google_maps_photos",
+    "hl": "en",
+    "next_page_token": "EvgDKYQi49-NlUMIDwAAAAEAAAMAAAAQAAAAAAAAAAAAAAAAAAIgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQBAAAAAAAgAAAAAAAQAAAAIgAAAAAAAAAABAAAAAAAAAAEAQAAAAAAAAQAAAAAAIAAAAAAAAABAAAAAAAAAACAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAABAQAAAAAAAAAAAACAAAAAIAAAAAAAAAAgAEEAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAEAAAAAAAAAAAAAAAAAAAAACAAAAAAAAASQAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAIAAAAAAAAAACAAAAACAgAAIAAABAAACAAAAAACAAIAAADAAAAAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAAAACAAIAAAAAIAAAAACAAAAABAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGBRCVCmEIuPfjZVD6AEAACAAAAADAAAACQAQBCgCFAAAAAARAAKQAAAAAAAAALCGCACAQAgARBAECkAClCCAABAAAAAIgAGAEIBSBAAABQASIACSEAAAAA"
+  },
+  "google_maps_posts": {
+    "data_id": "0x89c258e28c304997:0xfcafe4e7ce35ee8c",
+    "engine": "google_maps_posts",
+    "next_page_token": "CgwI6Z30sQYQuJjO0gEqBkVnSUlDZw=="
+  },
+  "google_maps_reviews": {
+    "data_id": "0x89c259af336b3341:0xa4969e07ce3108de",
+    "engine": "google_maps_reviews",
+    "hl": "fr",
+    "next_page_token": "CAESBkVnSUlDQQ=="
+  },
+  "google_news": {
+    "engine": "google_news",
+    "gl": "us",
+    "topic_token": "CAAqIggKIhxDQkFTRHdvSkwyMHZNRGxqTjNjd0VnSmxiaWdBUAE"
+  },
+  "google_news_light": {
+    "device": "desktop",
+    "engine": "google_news_light",
+    "google_domain": "google.com",
+    "q": "Coffee",
+    "start": 0,
+    "num": "3"
+  },
+  "google_patents": {
+    "engine": "google_patents",
+    "page": "1",
+    "q": "(Coffee)",
+    "num": 10
+  },
+  "google_patents_details": {
+    "engine": "google_patents_details",
+    "patent_id": "patent/US5208813A/en"
+  },
+  "google_play": {
+    "engine": "google_play",
+    "gl": "us",
+    "hl": "en",
+    "store": "apps"
+  },
+  "google_play_books": {
+    "engine": "google_play_books",
+    "gl": "us",
+    "hl": "en",
+    "next_page_token": "Cgiq5rbCAwIIBRAE"
+  },
+  "google_play_games": {
+    "engine": "google_play_games",
+    "gl": "us",
+    "hl": "en",
+    "section_page_token": "YkUSLAoCCAIQOxoER0FNRSIWcmVjc190b3BpY181Q1FXSDA0OWR5RSoCCAJCAggBShAKDggAELDMuswKEPXJlKEGUAL4AQA",
+    "q": "minecraft"
+  },
+  "google_play_movies": {
+    "engine": "google_play_movies",
+    "gl": "us",
+    "hl": "en",
+    "section_page_token": "Cgj6noGdAwIIFBAUGifqAiQiIgoccHJvbW90aW9uX21vdmllc19uZXdfcmVsZWFzZRA_GAQ"
+  },
+  "google_play_product": {
+    "engine": "google_play_product",
+    "gl": "us",
+    "hl": "en",
+    "platform": "phone",
+    "product_id": "com.google.android.apps.translate",
+    "sort_by": "1",
+    "store": "apps"
+  },
+  "google_related_questions": {
+    "device": "desktop",
+    "engine": "google_related_questions",
+    "google_domain": "google.com",
+    "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9vQkNreEJTa2M1U210T1JsQjZhMjAyTVRCMVVsRmhlV05HVnpSdUxTMTRWemhVUm5OVk4yaGxjRXRCWlRKR1RUbHlRWGswU2sxWWVXSTVYemhIWkhWTFNscExNRUpPV25WNWFtcFFUa3d3RWhaT1RIWmFXbk54WDBSTVV6RjNUalJRYnpkcVdFOUJHaUpCUmxoeVJXTnZZMHBFWmxacU5GQnljR3h0Um5KV1lsOVdOVmh1WkcxWFZGRjMiLCJmY3YiOiIzIiwiZWkiOiJOTHZaWnNxX0RMUzF3TjRQbzdqWE9BIiwicWMiOiJDZ1pqYjJabVpXVVFBSDA1VEQ4XyIsInF1ZXN0aW9uIjoiV2hhdCBhcmUgbmVnYXRpdmUgZWZmZWN0cyBvZiBjb2ZmZWU/IiwibGsiOiJHaU4zYUdGMElHRnlaU0J1WldkaGRHbDJaU0JsWm1abFkzUnpJRzltSUdOdlptWmxaUSIsImJzIjoiYy1QeTRWTDBMRlpJems5TFMwMVZTTV9QVDFISUwxSklTa3hSU0FQU0dhbUpPU1VaOWhLYmVEUVlqWlNrRkRJSnFPUnk0WklMejZoRVVsZWNEMUVLVWxPWlgyb3ZzVm5PU0Y1S3RoeWZJaTVYTHZud2pNUVNoY1NpVkFWREE0V2sxTHpVdE15U1lvWDhOS2dPZXdrVEl3VXB1WEs4aXJqaXVIVEF4cVRrcHdLRjgxSVZra3NMRU5KQVlZV1NmSkI5UUZfa3AxVGFTeXl1TmRLVzBpeUhhekhFcjRFcmdFc0Y3c3k4MVBURWtzeXlWSVZVb05Ka1ZMY2VkVFZTbFZJdUo2eVV5NDFMSGhFWnNLQUZXNWlkbVpLWFdsbHNMOUVtQ19KNUpsNVZBb3dBIn0="
+  },
+  "google_reverse_image": {
+    "engine": "google_reverse_image",
+    "image_url": "https://i.imgur.com/5bGzZi7.jpg"
+  },
+  "google_scholar": {
+    "cites": "9943926152122871332",
+    "engine": "google_scholar",
+    "hl": "en",
+    "q": "coffee shops",
+    "num": "3"
+  },
+  "google_scholar_author": {
+    "author_id": "wwxk-JMAAAAJ",
+    "engine": "google_scholar_author",
+    "hl": "en"
+  },
+  "google_scholar_cite": {
+    "engine": "google_scholar_cite",
+    "q": "FDc6HiktlqEJ",
+    "num": "3"
+  },
+  "google_scholar_profiles": {
+    "engine": "google_scholar_profiles",
+    "hl": "en",
+    "mauthors": "label:computational_chemistry"
+  },
+  "google_shopping": {
+    "device": "desktop",
+    "engine": "google_shopping",
+    "gl": "us",
+    "google_domain": "google.com",
+    "hl": "en",
+    "q": "Office Chair nearby",
+    "shoprs": "CAEYAyoMb2ZmaWNlIGNoYWlyMgwIAxIGTmVhcmJ5GAJYu6wgYAI",
+    "num": "3"
+  },
+  "google_shopping_filters": {
+    "engine": "google_shopping_filters",
+    "gl": "us",
+    "google_domain": "google.com",
+    "hl": "en",
+    "q": "Coffee nearby",
+    "shoprs": "CAEYAyoGY29mZmVlMgwIAxIGTmVhcmJ5GAJYt8sfYAI",
+    "num": "3"
+  },
+  "google_shopping_light": {
+    "device": "desktop",
+    "engine": "google_shopping_light",
+    "gl": "us",
+    "google_domain": "google.com",
+    "hl": "en",
+    "q": "macbook",
+    "start": "10",
+    "num": "3"
+  },
+  "google_short_videos": {
+    "device": "desktop",
+    "engine": "google_short_videos",
+    "gl": "us",
+    "google_domain": "google.com",
+    "hl": "en",
+    "q": "Coffee",
+    "start": "12",
+    "num": "3"
+  },
+  "google_travel_explore": {
+    "arrival_id": "LAX",
+    "currency": "USD",
+    "departure_id": "JFK",
+    "engine": "google_travel_explore",
+    "gl": "us",
+    "hl": "en"
+  },
+  "google_trends": {
+    "data_type": "RELATED_TOPICS",
+    "date": "today 12-m",
+    "engine": "google_trends",
+    "q": "/g/11qrhc4zy2",
+    "tz": "420",
+    "num": "3"
+  },
+  "google_trends_autocomplete": {
+    "data_type": "TIMESERIES",
+    "date": "today 12-m",
+    "engine": "google_trends_autocomplete",
+    "q": "Stripe",
+    "tz": "420",
+    "num": "3"
+  },
+  "google_trends_news": {
+    "engine": "google_trends_news",
+    "page_token": "7SZ8qHica1xTlFpYmlpcEp-SWJJ4h0Fw8nkGBgZGFsGUqkUFJYucgpD4qcVwPnPxWVtkPov991AUvmBKIwqfJdYElS_UjWLey-DbKPzDTJ9Q-L-0TiC7h1nyjhem-_IQ8h9bPZH5LELnrqLwBRK3oPCVmNlQ-CDzMkHmAwDUrGFb"
+  },
+  "google_trends_trending_now": {
+    "data_type": "TIMESERIES",
+    "date": "now 1-d",
+    "engine": "google_trends_trending_now",
+    "geo": "BR",
+    "hl": "en",
+    "q": "ps6",
+    "tz": "420",
+    "num": "3"
+  },
+  "google_videos": {
+    "device": "desktop",
+    "engine": "google_videos",
+    "gl": "us",
+    "google_domain": "google.com",
+    "hl": "en",
+    "q": "Coffee song TikTok",
+    "num": "3"
+  },
+  "google_videos_light": {
+    "device": "desktop",
+    "engine": "google_videos_light",
+    "gl": "us",
+    "google_domain": "google.com",
+    "hl": "en",
+    "q": "Coffee",
+    "tbs": "dur:s",
+    "num": "3"
+  },
+  "home_depot": {
+    "delivery_zip": "04401",
+    "engine": "home_depot",
+    "nao": "24",
+    "ps": "24",
+    "q": "chair",
+    "store_id": "2414",
+    "num": "3"
+  },
+  "home_depot_product": {
+    "engine": "home_depot_product",
+    "product_id": "326730631"
+  },
+  "home_depot_product_reviews": {
+    "engine": "home_depot_product_reviews",
+    "pagesize": "10",
+    "product_id": "302752040",
+    "sort_by": "mosthelpfull",
+    "start": "101"
+  },
+  "naver": {
+    "engine": "naver",
+    "filetype": "0",
+    "page": "11",
+    "query": "paris",
+    "start": "1",
+    "where": "web",
+    "num": "3"
+  },
+  "open_table_reviews": {
+    "engine": "open_table_reviews",
+    "open_table_domain": "opentable.com",
+    "page": "35",
+    "place_id": "central-park-boathouse-new-york-2"
+  },
+  "tripadvisor": {
+    "device": "desktop",
+    "engine": "tripadvisor",
+    "google_domain": "google.com",
+    "q": "Rome",
+    "num": "3"
+  },
+  "tripadvisor_place": {
+    "place_id": "188151",
+    "tripadvisor_domain": "www.tripadvisor.com",
+    "engine": "tripadvisor_place"
+  },
+  "walmart": {
+    "cat_id": "4044",
+    "device": "desktop",
+    "engine": "walmart",
+    "query": "coffee maker",
+    "num": "3"
+  },
+  "walmart_product": {
+    "device": "desktop",
+    "engine": "walmart_product",
+    "product_id": "7F3I09QOGAEE"
+  },
+  "walmart_product_reviews": {
+    "engine": "walmart_product_reviews",
+    "page": "2",
+    "product_id": "5689919121",
+    "sort": "relevancy"
+  },
+  "walmart_product_sellers": {
+    "engine": "walmart_product_sellers",
+    "product_id": "2PPLV83Y1QHE"
+  },
+  "yahoo": {
+    "b": "11",
+    "engine": "yahoo",
+    "p": "coffee mug"
+  },
+  "yahoo_images": {
+    "engine": "yahoo_images",
+    "p": "Fancy Coffee"
+  },
+  "yahoo_shopping": {
+    "device": "desktop",
+    "engine": "yahoo_shopping",
+    "limit": "60",
+    "p": "coffee",
+    "start": "60"
+  },
+  "yahoo_videos": {
+    "b": "61",
+    "engine": "yahoo_videos",
+    "p": "Coffee"
+  },
+  "yandex": {
+    "device": "desktop",
+    "engine": "yandex",
+    "lang": "en",
+    "lr": "84",
+    "p": "1",
+    "text": "coffee shops",
+    "yandex_domain": "yandex.com"
+  },
+  "yandex_images": {
+    "engine": "yandex_images",
+    "url": "https://wow-rak.com/wp-content/uploads/2019/03/intel_coffee_lake_figurative_image-100708700-orig.jpg",
+    "text": "coffee shops"
+  },
+  "yandex_videos": {
+    "device": "desktop",
+    "engine": "yandex_videos",
+    "p": "1",
+    "text": "coffee"
+  },
+  "yelp": {
+    "engine": "yelp",
+    "find_desc": "Coffee",
+    "find_loc": "New York, NY, USA",
+    "start": "10"
+  },
+  "yelp_place": {
+    "engine": "yelp_place",
+    "place_id": "56xmEk-5aTHwBiPyQTzMKA"
+  },
+  "yelp_reviews": {
+    "engine": "yelp_reviews",
+    "num": 10,
+    "place_id": "56xmEk-5aTHwBiPyQTzMKA",
+    "sortby": "relevance_desc",
+    "start": "50"
+  },
+  "youtube": {
+    "engine": "youtube",
+    "search_query": "star wars"
+  },
+  "youtube_video": {
+    "engine": "youtube_video",
+    "v": "N8meCjVsJWI"
+  },
+  "youtube_video_transcript": {
+    "engine": "youtube_video_transcript",
+    "v": "Gk8gB5VACZw",
+    "type": "asr",
+    "language_code": "en"
+  }
+}
