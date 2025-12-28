@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CATALOG_PATH = ROOT / "data" / "serpapi-engine-mcp-catalog.json"
 PROMPT_INDEX = ROOT / "prompt-generator" / "index.html"
 PROMPT_CATALOG = ROOT / "prompt-generator" / "catalog.json"
+DOCS_INDEX = ROOT / "docs" / "index.html"
 
 
 def main() -> None:
@@ -25,6 +26,7 @@ def main() -> None:
     if count != 1:
         raise SystemExit(f"Expected 1 catalogPayload replacement, got {count}")
     PROMPT_INDEX.write_text(updated)
+    DOCS_INDEX.write_text(updated)
 
 
 if __name__ == "__main__":
