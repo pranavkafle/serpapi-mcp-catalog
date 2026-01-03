@@ -105,7 +105,8 @@ def normalize_engine(engine: str, payload: dict) -> dict:
             "payload": payload,
         }
 
-    normalized_payload: dict[str, dict[str, object]] = {}
+    normalized_params: dict[str, dict[str, object]] = {}
+    common_params: dict[str, dict[str, object]] = {}
     if isinstance(payload, dict):
         for group_name, group in payload.items():
             if not isinstance(group, dict):
@@ -113,7 +114,6 @@ def normalize_engine(engine: str, payload: dict) -> dict:
             params = group.get("parameters")
             if not isinstance(params, dict):
                 continue
-            norm_params = {}
             for param_name, param in params.items():
                 if not isinstance(param, dict):
                     continue
@@ -125,10 +125,13 @@ def normalize_engine(engine: str, payload: dict) -> dict:
                 if isinstance(html_value, str):
                     filtered["description"] = html_to_markdown(html_value)
                 if filtered:
-                    norm_params[param_name] = filtered
-            normalized_payload[group_name] = {"parameters": norm_params}
+                    filtered["group"] = group_name
+                    if group_name == "serpapi_parameters":
+                        common_params[param_name] = filtered
+                    else:
+                        normalized_params[param_name] = filtered
 
-    return {"engine": engine, "payload": normalized_payload}
+    return {"engine": engine, "params": normalized_params, "common_params": common_params}
 
 
 def main() -> int:

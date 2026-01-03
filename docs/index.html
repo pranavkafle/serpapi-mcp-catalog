@@ -195,16 +195,8 @@
       return ` Options: ${preview.join(", ")}${suffix}`;
     };
 
-    const flattenParams = (payload) => {
-      const params = [];
-      Object.entries(payload || {}).forEach(([groupName, group]) => {
-        const groupParams = group && group.parameters ? group.parameters : {};
-        Object.entries(groupParams).forEach(([name, spec]) => {
-          params.push({ name, group: groupName, ...spec });
-        });
-      });
-      return params;
-    };
+    const mapParams = (paramMap, isCommon = false) =>
+      Object.entries(paramMap || {}).map(([name, spec]) => ({ name, isCommon, ...spec }));
 
     const pickQueryParam = (params) => {
       const blacklist = new Set(["engine", "api_key"]);
@@ -220,17 +212,19 @@
       if (!engine) return "";
 
       const name = titleCase(engine.engine);
-      const params = flattenParams(engine.payload);
-      const required = params.filter((p) => p.required === true);
-      const optional = params.filter((p) => p.required === false);
-      const unspecified = params.filter((p) => p.required !== true && p.required !== false);
+      const params = mapParams(engine.params);
+      const commonParams = mapParams(engine.common_params, true);
+      const queryParam = pickQueryParam(params);
+      const withoutQuery = (p) => !queryParam || p.name !== queryParam.name;
+      const required = params.filter((p) => p.required === true).filter(withoutQuery);
+      const optional = params.filter((p) => p.required === false).filter(withoutQuery);
+      const unspecified = params.filter((p) => p.required !== true && p.required !== false).filter(withoutQuery);
       const exampleParams = { engine: engine.engine };
       required.forEach((param) => {
         if (param.name === "engine" || param.name === "api_key") return;
         const typeHint = param.type ? `:${param.type}` : "";
         exampleParams[param.name] = `<required${typeHint}>`;
       });
-      const queryParam = pickQueryParam(params);
       if (queryParam && !exampleParams[queryParam.name]) {
         exampleParams[queryParam.name] = "<query>";
       }
@@ -247,6 +241,7 @@
       lines.push(`- Always set params.engine to "${engine.engine}".`);
       lines.push('- Prefer mode="compact" unless the user asks for full payloads.');
       lines.push("- The SerpApi API key is provided by the MCP server; do not include api_key in params.");
+      lines.push("- Group names are informational only; request params are the leaf keys.");
       lines.push("");
       lines.push("Required parameters:");
       if (required.length === 0) {
@@ -262,6 +257,16 @@
         lines.push("");
         lines.push("Primary query parameter:");
         lines.push(`- ${queryParam.name}: ${safe(queryParam.description, "Query parameter.")}`);
+      }
+      const commonRenderable = commonParams.filter((p) => p.name !== "api_key" && p.name !== "engine");
+      if (commonRenderable.length > 0) {
+        lines.push("");
+        lines.push("Common SerpApi parameters:");
+        commonRenderable.forEach((p) => {
+          const desc = safe(p.description, "No description.");
+          const type = p.type ? ` Type: ${p.type}.` : "";
+          lines.push(`- ${p.name}: ${desc}${type}${formatOptions(p.options)}`);
+        });
       }
       lines.push("");
       lines.push("Optional parameters:");
