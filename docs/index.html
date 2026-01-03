@@ -206,6 +206,16 @@
       return params;
     };
 
+    const pickQueryParam = (params) => {
+      const blacklist = new Set(["engine", "api_key"]);
+      const preferred = ["q", "k", "search_query", "term", "query", "keyword", "asin", "product_id", "place_id", "v"];
+      for (const key of preferred) {
+        const match = params.find((p) => p.name === key);
+        if (match) return match;
+      }
+      return params.find((p) => !blacklist.has(p.name) && /query|search|keyword/i.test(p.description || "")) || null;
+    };
+
     const renderPrompt = (engine) => {
       if (!engine) return "";
 
@@ -220,6 +230,10 @@
         const typeHint = param.type ? `:${param.type}` : "";
         exampleParams[param.name] = `<required${typeHint}>`;
       });
+      const queryParam = pickQueryParam(params);
+      if (queryParam && !exampleParams[queryParam.name]) {
+        exampleParams[queryParam.name] = "<query>";
+      }
 
       const lines = [];
       lines.push(`You are a SerpApi MCP assistant focused on: ${name}.`);
@@ -243,6 +257,11 @@
           const type = p.type ? ` Type: ${p.type}.` : "";
           lines.push(`- ${p.name}: ${desc}${type}${formatOptions(p.options)}`);
         });
+      }
+      if (queryParam && queryParam.name !== "engine") {
+        lines.push("");
+        lines.push("Primary query parameter:");
+        lines.push(`- ${queryParam.name}: ${safe(queryParam.description, "Query parameter.")}`);
       }
       lines.push("");
       lines.push("Optional parameters:");
