@@ -164,11 +164,6 @@
           </div>
         </div>
       </div>
-      <div class="card-footer">
-        <small class="text-muted fst-italic">
-          Source: <a id="docUrl" class="source-link" href="#" target="_blank" rel="noreferrer">-</a>
-        </small>
-      </div>
     </div>
   </main>
 
@@ -179,7 +174,6 @@
     const engineSelect = document.getElementById("engineSelect");
     const engineId = document.getElementById("engineId");
     const engineDescription = document.getElementById("engineDescription");
-    const docUrl = document.getElementById("docUrl");
     const promptOutput = document.getElementById("promptOutput");
 
     const engineCache = new Map();
@@ -289,10 +283,6 @@
       const name = titleCase(engine.engine);
       engineId.textContent = engine.engine;
       engineDescription.textContent = "Descriptions and doc links are not included in this dataset.";
-      docUrl.textContent = "-";
-      docUrl.href = "#";
-      docUrl.classList.add("disabled");
-      docUrl.setAttribute("aria-disabled", "true");
       promptOutput.value = renderPrompt(engine);
       document.title = `${name} Prompt Generator`;
     };
