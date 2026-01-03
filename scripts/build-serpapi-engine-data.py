@@ -15,6 +15,7 @@ RAW_JSON_EXPORT = False
 PLAYGROUND_URL = "https://serpapi.com/playground"
 OUT_DIR = Path("docs/data/engines-raw" if RAW_JSON_EXPORT else "docs/data/engines-normalized")
 ENGINE_INDEX_PATH = Path("docs/data/engine-index.json")
+EXCLUDED_ENGINES = {"google_scholar_profiles", "google_light_fast"}
 
 PARAM_KEEP_KEYS = {"html", "type", "options", "required"}
 
@@ -147,6 +148,8 @@ def main() -> int:
 
     for engine, payload in sorted(params.items()):
         if not isinstance(engine, str):
+            continue
+        if engine in EXCLUDED_ENGINES:
             continue
         normalized = normalize_engine(engine, payload)
         out_path = OUT_DIR / f"{engine}.json"
