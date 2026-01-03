@@ -290,10 +290,6 @@
       lines.push("- If the user requests a filter, map it to optional params when possible.");
       lines.push("- Cite the engine name and explain what it returns.");
       lines.push("");
-      lines.push("Example MCP call (JSON):");
-      const exampleCall = JSON.stringify({ params: exampleParams, mode: "compact" }, null, 2);
-      lines.push(exampleCall);
-
       return lines.join("\n");
     };
 
