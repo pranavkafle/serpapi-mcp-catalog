@@ -15,7 +15,7 @@ RAW_JSON_EXPORT = False
 PLAYGROUND_URL = "https://serpapi.com/playground"
 OUT_DIR = Path("docs/data/engines-raw" if RAW_JSON_EXPORT else "docs/data/engines-normalized")
 ENGINE_INDEX_PATH = Path("docs/data/engine-index.json")
-EXCLUDED_ENGINES = {"google_scholar_profiles", "google_light_fast"}
+EXCLUDED_ENGINES = {"google_scholar_profiles", "google_light_fast", "google_lens_image_sources"}
 
 PARAM_KEEP_KEYS = {"html", "type", "options", "required"}
 
