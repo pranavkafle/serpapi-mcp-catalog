@@ -32,6 +32,7 @@ Then open `http://localhost:8000/docs/index.html`, pick an engine, copy the gene
 ## Notes
 
 - The catalog is meant to be practical for MCP usage, even when the docs are incomplete or inconsistent.
+- Deprecated engines are excluded: `google_scholar_profiles`, `google_light_fast`, `google_lens_image_sources`.
 
 ## License
 
