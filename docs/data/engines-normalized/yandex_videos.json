@@ -11,19 +11,10 @@
       "options": [
         "yandex.com",
         "yandex.ru",
-        "ya.ru",
         "yandex.by",
         "yandex.kz",
         "yandex.uz",
-        "yandex.com.tr",
-        "yandex.az",
-        "yandex.com.ge",
-        "yandex.com.am",
-        "yandex.co.il",
-        "yandex.md",
-        "yandex.tm",
-        "yandex.tj",
-        "yandex.eu"
+        "yandex.com.tr"
       ],
       "description": "Parameter defines the Yandex Videos domain to use. It defaults to `yandex.com`. Head to the Yandex domains for a full list of supported Yandex domains.",
       "group": "localization"

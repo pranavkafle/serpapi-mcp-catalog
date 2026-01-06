@@ -11,19 +11,10 @@
       "options": [
         "yandex.com",
         "yandex.ru",
-        "ya.ru",
         "yandex.by",
         "yandex.kz",
         "yandex.uz",
-        "yandex.com.tr",
-        "yandex.az",
-        "yandex.com.ge",
-        "yandex.com.am",
-        "yandex.co.il",
-        "yandex.md",
-        "yandex.tm",
-        "yandex.tj",
-        "yandex.eu"
+        "yandex.com.tr"
       ],
       "description": "Parameter defines the Yandex domain to use. It defaults to `yandex.com`. Head to the Yandex domains for a full list of supported Yandex domains. A default lr is used for each yandex_domain. Example: `84`(US) for `yandex.com` A default lang parameter `en`(English) is used for `yandex.com`",
       "group": "localization"
@@ -31,27 +22,14 @@
     "lang": {
       "type": "select",
       "options": [
-        "null",
         "ru",
         "en",
         "be",
-        "fr",
-        "de",
-        "id",
         "kk",
-        "tt",
         "tr",
-        "uk",
-        "uz",
-        "az",
-        "hy",
-        "lv",
-        "lt",
-        "et",
-        "ro",
-        "tk"
+        "uk"
       ],
-      "description": "Parameter defines the language to use for the Yandex search. Head to the Yandex languages for a full list of supported Yandex languages. It defaults to `en` when yandex_domain is `yandex.com`. If you want to disable this parameter, set its value to `null`(\"Unspecified\"). You can also pass 2-letter country codes separated by commas, for example: `ru,en` to get results in multiple languages.",
+      "description": "Parameter defines the language to use for the Yandex search. Head to the Yandex languages for a full list of supported Yandex languages. It defaults to `en` when yandex_domain is `yandex.com`.",
       "group": "localization"
     },
     "lr": {
@@ -4061,40 +4039,37 @@
       "description": "Parameter defines country or region ID to limit the search results to. Head to the Yandex locations for a full list of supported Yandex locations. If parameter is not set - the matching location of selected `yandex_domain` is used, e.g. `84` for `yandex.com`.",
       "group": "geographic_location"
     },
-    "rstr": {
-      "type": "checkbox",
-      "description": "Parameter enables additional filtering to select search results that include specified location (`lr`) in the text snippets/titles.",
-      "group": "geographic_location"
-    },
-    "within": {
+    "family_mode": {
       "type": "select",
       "options": [
         [
           "0",
-          "All time"
-        ],
-        [
-          "9",
-          "Recent"
-        ],
-        [
-          "7",
-          "Today"
-        ],
-        [
-          "77",
-          "Last day"
+          "Off"
         ],
         [
           "1",
-          "Last 2 weeks"
+          "Moderate"
         ],
         [
           "2",
-          "Last month"
+          "Strict"
         ]
       ],
-      "description": "Parameter is used to limit the search results to specific time period. It defaults to `all time`",
+      "description": "Parameter enables or disables Family Mode (safe search). It can be set to: - Off(`0`) - Moderate(`1`) - Strict(`2`). It defaults to Moderate(`1`).",
+      "group": "advanced_yandex_parameters"
+    },
+    "fix_typo": {
+      "type": "select",
+      "options": [
+        "false",
+        "true"
+      ],
+      "description": "Parameter enables or disables automatic spelling correction. It can be set to: `true` - `false`. It defaults to `true`.",
+      "group": "advanced_yandex_parameters"
+    },
+    "groups_on_page": {
+      "type": "number",
+      "description": "Parameter defines the maximum number of groups displayed on a single results page. It defaults to `20`.",
       "group": "advanced_yandex_parameters"
     },
     "p": {

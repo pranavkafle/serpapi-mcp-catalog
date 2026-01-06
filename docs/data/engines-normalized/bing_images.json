@@ -121,7 +121,7 @@
         "color",
         "bw",
         "FGcls_RED",
-        "FGcls_ORGANGE",
+        "FGcls_ORANGE",
         "FGcls_YELLOW",
         "FGcls_GREEN",
         "FGcls_TEAL",
@@ -133,7 +133,7 @@
         "FGcls_GRAY",
         "FGcls_WHITE"
       ],
-      "description": "Parameter is used for filtering images by color. It can be set to: `color` - Color Only `bw` - Black & white `FGcls_RED` - Red `FGcls_ORGANGE` - Orange `FGcls_YELLOW` - Yellow `FGcls_GREEN` - Green `FGcls_TEAL` - Teal `FGcls_BLUE` - Blue `FGcls_PURPLE` - Purple `FGcls_PINK` - Pink `FGcls_BROWN` - Brown `FGcls_BLACK` - Black `FGcls_GRAY` - Gray `FGcls_WHITE` - White",
+      "description": "Parameter is used for filtering images by color. It can be set to: `color` - Color Only `bw` - Black & white `FGcls_RED` - Red `FGcls_ORANGE` - Orange `FGcls_YELLOW` - Yellow `FGcls_GREEN` - Green `FGcls_TEAL` - Teal `FGcls_BLUE` - Blue `FGcls_PURPLE` - Purple `FGcls_PINK` - Pink `FGcls_BROWN` - Brown `FGcls_BLACK` - Black `FGcls_GRAY` - Gray `FGcls_WHITE` - White",
       "group": "advanced_bing_images_parameters"
     },
     "photo": {
