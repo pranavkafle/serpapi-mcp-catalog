@@ -83,7 +83,7 @@
         "v",
         "f"
       ],
-      "description": "This parameter specifies the search filter you want to use for the Tripadvisor search. Available options: `a` - All Results `r` - Restaurants `A` - Things to Do `h` - Hotels `g` - Destinations `v` - Vacation Rentals `f` - Forums",
+      "description": "This parameter specifies the search filter you want to use for the Tripadvisor search. Available options: `a` - All Results `r` - Restaurants `A` - Things to Do `h` - Hotels `g` - Destinations `v` - Vacation Rentals `f` - Forums NOTE: Tripadvisor has discontinued support for Vacation Rentals. As a result, using `ssrc=v` may return incomplete results or no results at all.",
       "group": "advanced_filters"
     },
     "offset": {
