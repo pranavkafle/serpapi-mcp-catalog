@@ -8,12 +8,12 @@
     },
     "lat": {
       "type": "number",
-      "description": "Defines a GPS latitude for the search origin.",
+      "description": "Defines a GPS latitude for the search origin. This parameter might not be supported for all queries.",
       "group": "geographic_location"
     },
     "lon": {
       "type": "number",
-      "description": "Defines a GPS longitude for the search origin.",
+      "description": "Defines a GPS longitude for the search origin. This parameter might not be supported for all queries.",
       "group": "geographic_location"
     },
     "tripadvisor_domain": {
@@ -88,7 +88,7 @@
     },
     "offset": {
       "type": "number",
-      "description": "Parameter defines the result offset. It skips the given number of results. It's used for pagination. (e.g., `0` (default) is the first page of results, `30` is the 2nd page of results, `60` is the 3rd page of results, etc.).",
+      "description": "Parameter defines the result offset. It skips the given number of results. It's used for pagination. (e.g., `0` (default) is the first page of results, `30` is the 2nd page of results, `60` is the 3rd page of results, etc.). This parameter might not be supported for all queries.",
       "group": "pagination"
     },
     "limit": {
