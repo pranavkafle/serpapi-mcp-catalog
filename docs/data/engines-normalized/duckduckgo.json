@@ -77,6 +77,11 @@
       "description": "Parameter defines the region to use for the DuckDuckGo search. Region code examples: `us-en` for the United States, `uk-en` for United Kingdom, or `fr-fr` for France. Head to the DuckDuckGo regions for a full list of supported regions.",
       "group": "localization"
     },
+    "search_assist": {
+      "type": "checkbox",
+      "description": "Parameter determines if DuckDuckGo's AI Search Assist will be returned in the response. It can be set to `true` or `false` (default).",
+      "group": "advanced_ads_transparency_parameters"
+    },
     "safe": {
       "type": "select",
       "options": [
