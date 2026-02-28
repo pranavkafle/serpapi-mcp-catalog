@@ -80,7 +80,7 @@
     "search_assist": {
       "type": "checkbox",
       "description": "Parameter determines if DuckDuckGo's AI Search Assist will be returned in the response. It can be set to `true` or `false` (default).",
-      "group": "advanced_ads_transparency_parameters"
+      "group": "advanced_parameters"
     },
     "safe": {
       "type": "select",
