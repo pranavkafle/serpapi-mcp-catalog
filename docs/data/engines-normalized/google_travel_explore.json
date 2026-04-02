@@ -650,7 +650,11 @@
       "group": "advanced_filters"
     },
     "include_airlines": {
-      "description": "Parameter defines the airline codes to be included. Split multiple airlines with comma. Each airline code should be a 2-character IATA code consisting of either two uppercase letters or one uppercase letter and one digit. You can search for airline codes on IATA. For example, `UA` is United Airlines. Additionally, alliances can be also included here: `STAR_ALLIANCE` - Star Alliance `SKYTEAM` - SkyTeam `ONEWORLD` - Oneworld",
+      "description": "Parameter defines the airline codes to be included. Split multiple airlines with a comma. Each airline code should be a 2-character IATA code consisting of either two uppercase letters or one uppercase letter and one digit. You can search for airline codes on IATA. For example, `UA` is United Airlines. Additionally, alliances can be also included here: `STAR_ALLIANCE` - Star Alliance `SKYTEAM` - SkyTeam `ONEWORLD` - Oneworld exclude_airlines and include_airlines parameters can't be used together.",
+      "group": "advanced_filters"
+    },
+    "exclude_airlines": {
+      "description": "Parameter defines the airline codes to be excluded. Split multiple airlines with a comma. Each airline code should be a 2-character IATA code consisting of either two uppercase letters or one uppercase letter and one digit. You can search for airline codes on IATA. For example, `UA` is United Airlines. Additionally, alliances can be also excluded here: `STAR_ALLIANCE` - Star Alliance `SKYTEAM` - SkyTeam `ONEWORLD` - Oneworld exclude_airlines and include_airlines parameters can't be used together.",
       "group": "advanced_filters"
     },
     "bags": {
