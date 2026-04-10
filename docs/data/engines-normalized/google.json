@@ -746,7 +746,7 @@
         "vid",
         "pts"
       ],
-      "description": "(to be matched) parameter defines the type of search you want to do. It can be set to: `(no tbm parameter)`: regular Google Search, `isch`: Google Images API, `lcl` - Google Local API `vid`: Google Videos API, `nws`: Google News API, `shop`: Google Shopping API, `pts`: Google Patents API, or any other Google service.",
+      "description": "(to be matched) parameter defines the type of search you want to do. It can be set to: `(no tbm parameter)`: regular Google Search, `isch`: Google Images API, `lcl`: Google Local API, `vid`: Google Videos API, `nws`: Google News API, `shop`: Google Shopping API, `pts`: Google Patents API, or any other Google service.",
       "group": "search_type"
     },
     "start": {
