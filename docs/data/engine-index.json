@@ -39,6 +39,7 @@
     "google_finance_markets",
     "google_flights",
     "google_flights_autocomplete",
+    "google_flights_deals",
     "google_forums",
     "google_hotels",
     "google_hotels_autocomplete",
