@@ -118,6 +118,7 @@
     "yelp_reviews",
     "youtube",
     "youtube_video",
-    "youtube_video_transcript"
+    "youtube_video_transcript",
+    "zillow"
   ]
 }
