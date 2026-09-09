@@ -117,6 +117,7 @@
     "yelp_place",
     "yelp_reviews",
     "youtube",
+    "youtube_channel",
     "youtube_video",
     "youtube_video_transcript",
     "zillow"
