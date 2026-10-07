@@ -1,5 +1,6 @@
 {
   "engines": [
+    "airbnb",
     "amazon",
     "amazon_autocomplete",
     "amazon_product",
@@ -74,6 +75,7 @@
     "google_play_games",
     "google_play_movies",
     "google_play_product",
+    "google_product",
     "google_related_questions",
     "google_reverse_image",
     "google_scholar",
