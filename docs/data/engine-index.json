@@ -53,6 +53,7 @@
     "google_hotels",
     "google_hotels_autocomplete",
     "google_hotels_photos",
+    "google_hotels_price_calendar",
     "google_hotels_reviews",
     "google_images",
     "google_images_light",

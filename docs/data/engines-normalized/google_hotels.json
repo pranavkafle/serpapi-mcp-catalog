@@ -3,7 +3,7 @@
   "params": {
     "q": {
       "required": true,
-      "description": "Parameter defines the search query. You can use anything that you would use in a regular Google Hotels search.",
+      "description": "Parameter defines the search query. You can use anything that you would use in a regular Google Hotels search. Parameter isn't required when using property_token, and is ignored if both are set.",
       "group": "search_query"
     },
     "gl": {
@@ -1109,7 +1109,7 @@
       "group": "pagination"
     },
     "property_token": {
-      "description": "Parameter is used to get property details which consists of name, address, phone, prices, nearby places, and etc. You can find property_token from Google Hotels Properties API.",
+      "description": "Parameter is used to get property details which consists of name, address, phone, prices, nearby places, and etc. You can find property_token from Google Hotels Properties API. Parameter can be used without q. If both are set, q is ignored.",
       "group": "property_details"
     }
   },
