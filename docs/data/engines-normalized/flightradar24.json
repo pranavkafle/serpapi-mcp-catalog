@@ -1,9 +1,13 @@
 {
   "engine": "flightradar24",
   "params": {
+    "airport": {
+      "description": "Parameter defines the airport that flights depart from or arrive at, as a 3-letter IATA airport code (e.g., `LHR` for London Heathrow). You can search for it on Flightradar24 or IATA. Multiple airports can be separated by commas (e.g., `LHR,LGW`).",
+      "group": "search_query"
+    },
     "map_bounds": {
       "description": "Parameter defines the GPS coordinates of the map area to search in, like moving the map on Flightradar24. Only flights within these bounds are returned. Its value must be 4 comma-separated numbers matching the following format: `north` + `,` + `east` + `,` + `south` + `,` + `west` `north` and `south` are latitudes, and `east` and `west` are longitudes (e.g., `51.69,0.33,51.28,-0.51` for London). An area crossing the antimeridian has a `west` longitude greater than its `east` longitude (e.g., `60,-170,40,170` around the Aleutian Islands). When not set, flights are searched worldwide. Flightradar24 returns up to `1,500` flights per search, so narrow the map area or add filters to get every flight of a busy area.",
-      "group": "search_query"
+      "group": "geographic_location"
     },
     "flight_number": {
       "description": "Parameter defines the flight number to search for (e.g., `BA285`). Flights whose number starts with this value are returned, so `BA28` also returns `BA285` and `BA287`. Multiple flight numbers can be separated by commas (e.g., `BA285,BA287`).",
@@ -24,10 +28,6 @@
     "aircraft_type": {
       "description": "Parameter defines the aircraft type to search for, as an ICAO aircraft type designator (e.g., `A388` for the Airbus A380-800). It's shown in the aircraft details of a flight on Flightradar24. Aircraft whose type starts with this value are returned, so `B77` returns every Boeing 777 variant. Multiple aircraft types can be separated by commas (e.g., `A388,B748`).",
       "group": "flight_filters"
-    },
-    "airport": {
-      "description": "Parameter defines the airport that flights depart from or arrive at, as a 3-letter IATA airport code (e.g., `LHR` for London Heathrow). You can search for it on Flightradar24 or IATA. Multiple airports can be separated by commas (e.g., `LHR,LGW`).",
-      "group": "airport_filters"
     },
     "departure_id": {
       "description": "Parameter defines the airport that flights depart from, as a 3-letter IATA airport code (e.g., `LHR` for London Heathrow). You can search for it on Flightradar24 or IATA. Multiple airports can be separated by commas (e.g., `LHR,LGW`).",
