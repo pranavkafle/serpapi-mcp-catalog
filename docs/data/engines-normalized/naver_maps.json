@@ -47,11 +47,11 @@
       "group": "advanced_filters"
     },
     "check_in_date": {
-      "description": "Parameter defines the check-in date. The format is YYYY-MM-DD (e.g., `2026-11-24`). It must be used together with check_out_date. Dates apply to accommodation lists, such as \ud39c\uc158, \ucea0\ud551\uc7a5, and \uae00\ub7a8\ud551. With dates, Naver Maps only returns the places available for the stay, and `price` is the average nightly price.",
+      "description": "Parameter defines the check-in date. The format is YYYY-MM-DD (e.g., `2026-11-26`). It must be used together with check_out_date. Dates apply to accommodation lists, such as \ud39c\uc158, \ucea0\ud551\uc7a5, and \uae00\ub7a8\ud551. With dates, Naver Maps only returns the places available for the stay, and `price` is the average nightly price.",
       "group": "dates_and_guests"
     },
     "check_out_date": {
-      "description": "Parameter defines the check-out date. The format is YYYY-MM-DD (e.g., `2026-11-26`). It must be used together with check_in_date, and be later than it.",
+      "description": "Parameter defines the check-out date. The format is YYYY-MM-DD (e.g., `2026-11-28`). It must be used together with check_in_date, and be later than it.",
       "group": "dates_and_guests"
     },
     "adults": {
