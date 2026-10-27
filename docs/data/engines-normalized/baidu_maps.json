@@ -1,0 +1,1617 @@
+{
+  "engine": "baidu_maps",
+  "params": {
+    "q": {
+      "required": true,
+      "description": "Parameter defines the search query. You can use anything that you would use in a regular Baidu Maps search: a type of place, a business, a brand, or a landmark (e.g., `\u5496\u5561` (coffee), `\u9152\u5e97` (hotels), `\u661f\u5df4\u514b` (Starbucks), or `\u6545\u5bab` (the Forbidden City)). Without c, the query can include the city to search in (e.g., `\u4e0a\u6d77 \u5496\u5561` for coffee in Shanghai).",
+      "group": "search_query"
+    },
+    "c": {
+      "type": "select",
+      "options": [
+        [
+          131,
+          "\u5317\u4eac (beijing) - 131"
+        ],
+        [
+          289,
+          "\u4e0a\u6d77 (shanghai) - 289"
+        ],
+        [
+          332,
+          "\u5929\u6d25 (tianjin) - 332"
+        ],
+        [
+          132,
+          "\u91cd\u5e86 (chongqing) - 132"
+        ],
+        [
+          127,
+          "\u5408\u80a5 (hefei) - 127"
+        ],
+        [
+          130,
+          "\u5b89\u5e86 (anqing) - 130"
+        ],
+        [
+          126,
+          "\u868c\u57e0 (bangbu) - 126"
+        ],
+        [
+          188,
+          "\u4eb3\u5dde (bozhou) - 188"
+        ],
+        [
+          299,
+          "\u6c60\u5dde (chizhou) - 299"
+        ],
+        [
+          189,
+          "\u6ec1\u5dde (chuzhou) - 189"
+        ],
+        [
+          128,
+          "\u961c\u9633 (fuyang) - 128"
+        ],
+        [
+          253,
+          "\u6dee\u5317 (huaibei) - 253"
+        ],
+        [
+          250,
+          "\u6dee\u5357 (huainan) - 250"
+        ],
+        [
+          252,
+          "\u9ec4\u5c71 (huangshan) - 252"
+        ],
+        [
+          298,
+          "\u516d\u5b89 (liuan) - 298"
+        ],
+        [
+          358,
+          "\u9a6c\u978d\u5c71 (maanshan) - 358"
+        ],
+        [
+          370,
+          "\u5bbf\u5dde (suzhou) - 370"
+        ],
+        [
+          337,
+          "\u94dc\u9675 (tongling) - 337"
+        ],
+        [
+          129,
+          "\u829c\u6e56 (wuhu) - 129"
+        ],
+        [
+          190,
+          "\u5ba3\u57ce (xuancheng) - 190"
+        ],
+        [
+          300,
+          "\u798f\u5dde (fuzhou) - 300"
+        ],
+        [
+          193,
+          "\u9f99\u5ca9 (longyan) - 193"
+        ],
+        [
+          133,
+          "\u5357\u5e73 (nanping) - 133"
+        ],
+        [
+          192,
+          "\u5b81\u5fb7 (ningde) - 192"
+        ],
+        [
+          195,
+          "\u8386\u7530 (putian) - 195"
+        ],
+        [
+          134,
+          "\u6cc9\u5dde (quanzhou) - 134"
+        ],
+        [
+          254,
+          "\u4e09\u660e (sanming) - 254"
+        ],
+        [
+          194,
+          "\u53a6\u95e8 (xiamen) - 194"
+        ],
+        [
+          255,
+          "\u6f33\u5dde (zhangzhou) - 255"
+        ],
+        [
+          36,
+          "\u5170\u5dde (lanzhou) - 36"
+        ],
+        [
+          35,
+          "\u767d\u94f6 (baiyin) - 35"
+        ],
+        [
+          136,
+          "\u5b9a\u897f (dingxi) - 136"
+        ],
+        [
+          247,
+          "\u7518\u5357\u85cf\u65cf\u81ea\u6cbb\u5dde (gannanzhou) - 247"
+        ],
+        [
+          33,
+          "\u5609\u5cea\u5173 (jiayuguan) - 33"
+        ],
+        [
+          34,
+          "\u91d1\u660c (jinchang) - 34"
+        ],
+        [
+          37,
+          "\u9152\u6cc9 (jiuquan) - 37"
+        ],
+        [
+          182,
+          "\u4e34\u590f\u56de\u65cf\u81ea\u6cbb\u5dde (linxiazhou) - 182"
+        ],
+        [
+          256,
+          "\u9647\u5357 (longnan) - 256"
+        ],
+        [
+          359,
+          "\u5e73\u51c9 (pingliang) - 359"
+        ],
+        [
+          135,
+          "\u5e86\u9633 (qingyang) - 135"
+        ],
+        [
+          196,
+          "\u5929\u6c34 (tianshui) - 196"
+        ],
+        [
+          118,
+          "\u6b66\u5a01 (wuwei) - 118"
+        ],
+        [
+          117,
+          "\u5f20\u6396 (zhangye) - 117"
+        ],
+        [
+          257,
+          "\u5e7f\u5dde (guangzhou) - 257"
+        ],
+        [
+          201,
+          "\u6f6e\u5dde (chaozhou) - 201"
+        ],
+        [
+          119,
+          "\u4e1c\u839e (dongguan) - 119"
+        ],
+        [
+          138,
+          "\u4f5b\u5c71 (foshan) - 138"
+        ],
+        [
+          200,
+          "\u6cb3\u6e90 (heyuan) - 200"
+        ],
+        [
+          301,
+          "\u60e0\u5dde (huizhou) - 301"
+        ],
+        [
+          302,
+          "\u6c5f\u95e8 (jiangmen) - 302"
+        ],
+        [
+          259,
+          "\u63ed\u9633 (jieyang) - 259"
+        ],
+        [
+          139,
+          "\u8302\u540d (maoming) - 139"
+        ],
+        [
+          141,
+          "\u6885\u5dde (meizhou) - 141"
+        ],
+        [
+          197,
+          "\u6e05\u8fdc (qingyuan) - 197"
+        ],
+        [
+          303,
+          "\u6c55\u5934 (shantou) - 303"
+        ],
+        [
+          339,
+          "\u6c55\u5c3e (shanwei) - 339"
+        ],
+        [
+          137,
+          "\u97f6\u5173 (shaoguan) - 137"
+        ],
+        [
+          340,
+          "\u6df1\u5733 (shenzhen) - 340"
+        ],
+        [
+          199,
+          "\u9633\u6c5f (yangjiang) - 199"
+        ],
+        [
+          258,
+          "\u4e91\u6d6e (yunfu) - 258"
+        ],
+        [
+          198,
+          "\u6e5b\u6c5f (zhanjiang) - 198"
+        ],
+        [
+          338,
+          "\u8087\u5e86 (zhaoqing) - 338"
+        ],
+        [
+          187,
+          "\u4e2d\u5c71 (zhongshan) - 187"
+        ],
+        [
+          140,
+          "\u73e0\u6d77 (zhuhai) - 140"
+        ],
+        [
+          261,
+          "\u5357\u5b81 (nanning) - 261"
+        ],
+        [
+          203,
+          "\u767e\u8272 (baise) - 203"
+        ],
+        [
+          295,
+          "\u5317\u6d77 (beihai) - 295"
+        ],
+        [
+          144,
+          "\u5d07\u5de6 (chongzuo) - 144"
+        ],
+        [
+          204,
+          "\u9632\u57ce\u6e2f (fangchenggang) - 204"
+        ],
+        [
+          142,
+          "\u6842\u6797 (guilin) - 142"
+        ],
+        [
+          341,
+          "\u8d35\u6e2f (guigang) - 341"
+        ],
+        [
+          143,
+          "\u6cb3\u6c60 (hechi) - 143"
+        ],
+        [
+          260,
+          "\u8d3a\u5dde (hezhou) - 260"
+        ],
+        [
+          202,
+          "\u6765\u5bbe (laibin) - 202"
+        ],
+        [
+          305,
+          "\u67f3\u5dde (liuzhou) - 305"
+        ],
+        [
+          145,
+          "\u94a6\u5dde (qinzhou) - 145"
+        ],
+        [
+          304,
+          "\u68a7\u5dde (wuzhou) - 304"
+        ],
+        [
+          361,
+          "\u7389\u6797 (yulin) - 361"
+        ],
+        [
+          146,
+          "\u8d35\u9633 (guiyang) - 146"
+        ],
+        [
+          263,
+          "\u5b89\u987a (anshun) - 263"
+        ],
+        [
+          206,
+          "\u6bd5\u8282\u5e02 (bijie) - 206"
+        ],
+        [
+          147,
+          "\u516d\u76d8\u6c34 (liupanshui) - 147"
+        ],
+        [
+          205,
+          "\u94dc\u4ec1\u5e02 (tongren) - 205"
+        ],
+        [
+          262,
+          "\u9075\u4e49 (zunyi) - 262"
+        ],
+        [
+          343,
+          "\u9ed4\u897f\u5357\u5e03\u4f9d\u65cf\u82d7\u65cf\u81ea\u6cbb\u5dde (qianxinanzhou) - 343"
+        ],
+        [
+          342,
+          "\u9ed4\u4e1c\u5357\u82d7\u65cf\u4f97\u65cf\u81ea\u6cbb\u5dde (qiandongnanzhou) - 342"
+        ],
+        [
+          306,
+          "\u9ed4\u5357\u5e03\u4f9d\u65cf\u82d7\u65cf\u81ea\u6cbb\u5dde (qiannanzhou) - 306"
+        ],
+        [
+          125,
+          "\u6d77\u53e3 (haikou) - 125"
+        ],
+        [
+          2359,
+          "\u767d\u6c99\u9ece\u65cf\u81ea\u6cbb\u53bf (baisha) - 2359"
+        ],
+        [
+          1217,
+          "\u4fdd\u4ead\u9ece\u65cf\u82d7\u65cf\u81ea\u6cbb\u53bf (baoting) - 1217"
+        ],
+        [
+          1642,
+          "\u660c\u6c5f\u9ece\u65cf\u81ea\u6cbb\u53bf (changjiang) - 1642"
+        ],
+        [
+          1215,
+          "\u510b\u5dde (danzhou) - 1215"
+        ],
+        [
+          2757,
+          "\u6f84\u8fc8 (chengmai) - 2757"
+        ],
+        [
+          2634,
+          "\u4e1c\u65b9 (dongfang) - 2634"
+        ],
+        [
+          1214,
+          "\u5b9a\u5b89 (dingan) - 1214"
+        ],
+        [
+          2358,
+          "\u743c\u6d77 (qionghai) - 2358"
+        ],
+        [
+          2031,
+          "\u743c\u4e2d\u9ece\u65cf\u82d7\u65cf\u81ea\u6cbb\u53bf (qiongzhong) - 2031"
+        ],
+        [
+          2032,
+          "\u4e50\u4e1c\u9ece\u65cf\u81ea\u6cbb\u53bf (ledong) - 2032"
+        ],
+        [
+          2033,
+          "\u4e34\u9ad8 (lingao) - 2033"
+        ],
+        [
+          1643,
+          "\u9675\u6c34\u9ece\u65cf\u81ea\u6cbb\u53bf (lingshui) - 1643"
+        ],
+        [
+          121,
+          "\u4e09\u4e9a (sanya) - 121"
+        ],
+        [
+          1641,
+          "\u5c6f\u660c (tunchang) - 1641"
+        ],
+        [
+          1216,
+          "\u4e07\u5b81 (wanning) - 1216"
+        ],
+        [
+          2758,
+          "\u6587\u660c (wenchang) - 2758"
+        ],
+        [
+          1644,
+          "\u4e94\u6307\u5c71 (wuzhishan) - 1644"
+        ],
+        [
+          150,
+          "\u77f3\u5bb6\u5e84 (shijiazhuang) - 150"
+        ],
+        [
+          307,
+          "\u4fdd\u5b9a (baoding) - 307"
+        ],
+        [
+          149,
+          "\u6ca7\u5dde (cangzhou) - 149"
+        ],
+        [
+          207,
+          "\u627f\u5fb7 (chengde) - 207"
+        ],
+        [
+          151,
+          "\u90af\u90f8 (handan) - 151"
+        ],
+        [
+          208,
+          "\u8861\u6c34 (hengshui) - 208"
+        ],
+        [
+          191,
+          "\u5eca\u574a (langfang) - 191"
+        ],
+        [
+          148,
+          "\u79e6\u7687\u5c9b (qinhuangdao) - 148"
+        ],
+        [
+          265,
+          "\u5510\u5c71 (tangshan) - 265"
+        ],
+        [
+          266,
+          "\u90a2\u53f0 (xingtai) - 266"
+        ],
+        [
+          264,
+          "\u5f20\u5bb6\u53e3 (zhangjiakou) - 264"
+        ],
+        [
+          268,
+          "\u90d1\u5dde (zhengzhou) - 268"
+        ],
+        [
+          267,
+          "\u5b89\u9633 (anyang) - 267"
+        ],
+        [
+          215,
+          "\u9e64\u58c1 (hebi) - 215"
+        ],
+        [
+          211,
+          "\u7126\u4f5c (jiaozuo) - 211"
+        ],
+        [
+          210,
+          "\u5f00\u5c01 (kaifeng) - 210"
+        ],
+        [
+          153,
+          "\u6d1b\u9633 (luoyang) - 153"
+        ],
+        [
+          344,
+          "\u6f2f\u6cb3 (luohe) - 344"
+        ],
+        [
+          309,
+          "\u5357\u9633 (nanyang) - 309"
+        ],
+        [
+          213,
+          "\u5e73\u9876\u5c71 (pingdingshan) - 213"
+        ],
+        [
+          209,
+          "\u6fee\u9633 (puyang) - 209"
+        ],
+        [
+          212,
+          "\u4e09\u95e8\u5ce1 (sanmenxia) - 212"
+        ],
+        [
+          154,
+          "\u5546\u4e18 (shangqiu) - 154"
+        ],
+        [
+          152,
+          "\u65b0\u4e61 (xinxiang) - 152"
+        ],
+        [
+          214,
+          "\u4fe1\u9633 (xinyang) - 214"
+        ],
+        [
+          155,
+          "\u8bb8\u660c (xuchang) - 155"
+        ],
+        [
+          308,
+          "\u5468\u53e3 (zhoukou) - 308"
+        ],
+        [
+          269,
+          "\u9a7b\u9a6c\u5e97 (zhumadian) - 269"
+        ],
+        [
+          1277,
+          "\u6d4e\u6e90 (jiyuan) - 1277"
+        ],
+        [
+          48,
+          "\u54c8\u5c14\u6ee8 (haerbin) - 48"
+        ],
+        [
+          50,
+          "\u5927\u5e86 (daqing) - 50"
+        ],
+        [
+          38,
+          "\u5927\u5174\u5b89\u5cad\u5730\u533a (daxinganling) - 38"
+        ],
+        [
+          43,
+          "\u9e64\u5c97 (hegang) - 43"
+        ],
+        [
+          39,
+          "\u9ed1\u6cb3 (heihe) - 39"
+        ],
+        [
+          46,
+          "\u9e21\u897f (jixi) - 46"
+        ],
+        [
+          42,
+          "\u4f73\u6728\u65af (jiamusi) - 42"
+        ],
+        [
+          49,
+          "\u7261\u4e39\u6c5f (mudanjiang) - 49"
+        ],
+        [
+          47,
+          "\u4e03\u53f0\u6cb3 (qitaihe) - 47"
+        ],
+        [
+          41,
+          "\u9f50\u9f50\u54c8\u5c14 (qiqihaer) - 41"
+        ],
+        [
+          45,
+          "\u53cc\u9e2d\u5c71 (shuangyashan) - 45"
+        ],
+        [
+          44,
+          "\u7ee5\u5316 (suihua) - 44"
+        ],
+        [
+          40,
+          "\u4f0a\u6625 (yichun) - 40"
+        ],
+        [
+          218,
+          "\u6b66\u6c49 (wuhan) - 218"
+        ],
+        [
+          122,
+          "\u9102\u5dde (ezhou) - 122"
+        ],
+        [
+          373,
+          "\u6069\u65bd\u571f\u5bb6\u65cf\u82d7\u65cf\u81ea\u6cbb\u5dde (enshi) - 373"
+        ],
+        [
+          271,
+          "\u9ec4\u5188 (huanggang) - 271"
+        ],
+        [
+          311,
+          "\u9ec4\u77f3 (huangshi) - 311"
+        ],
+        [
+          217,
+          "\u8346\u95e8 (jingmen) - 217"
+        ],
+        [
+          157,
+          "\u8346\u5dde (jingzhou) - 157"
+        ],
+        [
+          1293,
+          "\u6f5c\u6c5f (qianjiang) - 1293"
+        ],
+        [
+          2734,
+          "\u795e\u519c\u67b6\u6797\u533a (shennongjialinqu) - 2734"
+        ],
+        [
+          216,
+          "\u5341\u5830 (shiyan) - 216"
+        ],
+        [
+          371,
+          "\u968f\u5dde (suizhou) - 371"
+        ],
+        [
+          2654,
+          "\u5929\u95e8 (tianmen) - 2654"
+        ],
+        [
+          1713,
+          "\u4ed9\u6843 (xiantao) - 1713"
+        ],
+        [
+          362,
+          "\u54b8\u5b81 (xianning) - 362"
+        ],
+        [
+          156,
+          "\u8944\u9633 (xiangyang) - 156"
+        ],
+        [
+          310,
+          "\u5b5d\u611f (xiaogan) - 310"
+        ],
+        [
+          270,
+          "\u5b9c\u660c (yichang) - 270"
+        ],
+        [
+          158,
+          "\u957f\u6c99 (changsha) - 158"
+        ],
+        [
+          219,
+          "\u5e38\u5fb7 (changde) - 219"
+        ],
+        [
+          275,
+          "\u90f4\u5dde (chenzhou) - 275"
+        ],
+        [
+          159,
+          "\u8861\u9633 (hengyang) - 159"
+        ],
+        [
+          363,
+          "\u6000\u5316 (huaihua) - 363"
+        ],
+        [
+          221,
+          "\u5a04\u5e95 (loudi) - 221"
+        ],
+        [
+          273,
+          "\u90b5\u9633 (shaoyang) - 273"
+        ],
+        [
+          313,
+          "\u6e58\u6f6d (xiangtan) - 313"
+        ],
+        [
+          274,
+          "\u6e58\u897f\u571f\u5bb6\u65cf\u82d7\u65cf\u81ea\u6cbb\u5dde (xiangxizhou) - 274"
+        ],
+        [
+          272,
+          "\u76ca\u9633 (yiyang) - 272"
+        ],
+        [
+          314,
+          "\u6c38\u5dde (yongzhou) - 314"
+        ],
+        [
+          220,
+          "\u5cb3\u9633 (yueyang) - 220"
+        ],
+        [
+          312,
+          "\u5f20\u5bb6\u754c (zhangjiajie) - 312"
+        ],
+        [
+          222,
+          "\u682a\u6d32 (zhuzhou) - 222"
+        ],
+        [
+          315,
+          "\u5357\u4eac (nanjing) - 315"
+        ],
+        [
+          348,
+          "\u5e38\u5dde (changzhou) - 348"
+        ],
+        [
+          162,
+          "\u6dee\u5b89 (huaian) - 162"
+        ],
+        [
+          347,
+          "\u8fde\u4e91\u6e2f (lianyungang) - 347"
+        ],
+        [
+          161,
+          "\u5357\u901a (nantong) - 161"
+        ],
+        [
+          224,
+          "\u82cf\u5dde (suzhou) - 224"
+        ],
+        [
+          277,
+          "\u5bbf\u8fc1 (suqian) - 277"
+        ],
+        [
+          276,
+          "\u6cf0\u5dde (taizhou) - 276"
+        ],
+        [
+          317,
+          "\u65e0\u9521 (wuxi) - 317"
+        ],
+        [
+          316,
+          "\u5f90\u5dde (xuzhou) - 316"
+        ],
+        [
+          223,
+          "\u76d0\u57ce (yancheng) - 223"
+        ],
+        [
+          346,
+          "\u626c\u5dde (yangzhou) - 346"
+        ],
+        [
+          160,
+          "\u9547\u6c5f (zhenjiang) - 160"
+        ],
+        [
+          163,
+          "\u5357\u660c (nanchang) - 163"
+        ],
+        [
+          226,
+          "\u629a\u5dde (fuzhou) - 226"
+        ],
+        [
+          365,
+          "\u8d63\u5dde (ganzhou) - 365"
+        ],
+        [
+          318,
+          "\u5409\u5b89 (jian) - 318"
+        ],
+        [
+          225,
+          "\u666f\u5fb7\u9547 (jingdezhen) - 225"
+        ],
+        [
+          349,
+          "\u4e5d\u6c5f (jiujiang) - 349"
+        ],
+        [
+          350,
+          "\u840d\u4e61 (pingxiang) - 350"
+        ],
+        [
+          364,
+          "\u4e0a\u9976 (shangrao) - 364"
+        ],
+        [
+          164,
+          "\u65b0\u4f59 (xinyu) - 164"
+        ],
+        [
+          278,
+          "\u5b9c\u6625 (yichun) - 278"
+        ],
+        [
+          279,
+          "\u9e70\u6f6d (yingtan) - 279"
+        ],
+        [
+          53,
+          "\u957f\u6625 (changchun) - 53"
+        ],
+        [
+          51,
+          "\u767d\u57ce (baicheng) - 51"
+        ],
+        [
+          57,
+          "\u767d\u5c71 (baishan) - 57"
+        ],
+        [
+          55,
+          "\u5409\u6797\u5e02 (jilinshi) - 55"
+        ],
+        [
+          183,
+          "\u8fbd\u6e90 (liaoyuan) - 183"
+        ],
+        [
+          56,
+          "\u56db\u5e73 (siping) - 56"
+        ],
+        [
+          52,
+          "\u677e\u539f (songyuan) - 52"
+        ],
+        [
+          165,
+          "\u901a\u5316 (tonghua) - 165"
+        ],
+        [
+          54,
+          "\u5ef6\u8fb9\u671d\u9c9c\u65cf\u81ea\u6cbb\u5dde (yanbian) - 54"
+        ],
+        [
+          58,
+          "\u6c88\u9633 (shenyang) - 58"
+        ],
+        [
+          320,
+          "\u978d\u5c71 (anshan) - 320"
+        ],
+        [
+          227,
+          "\u672c\u6eaa (benxi) - 227"
+        ],
+        [
+          280,
+          "\u671d\u9633 (zhaoyang) - 280"
+        ],
+        [
+          167,
+          "\u5927\u8fde (dalian) - 167"
+        ],
+        [
+          282,
+          "\u4e39\u4e1c (dandong) - 282"
+        ],
+        [
+          184,
+          "\u629a\u987a (fushun) - 184"
+        ],
+        [
+          59,
+          "\u961c\u65b0 (fuxin) - 59"
+        ],
+        [
+          319,
+          "\u846b\u82a6\u5c9b (huludao) - 319"
+        ],
+        [
+          166,
+          "\u9526\u5dde (jinzhou) - 166"
+        ],
+        [
+          351,
+          "\u8fbd\u9633 (liaoyang) - 351"
+        ],
+        [
+          228,
+          "\u76d8\u9526 (panjin) - 228"
+        ],
+        [
+          60,
+          "\u94c1\u5cad (tieling) - 60"
+        ],
+        [
+          281,
+          "\u8425\u53e3 (yingkou) - 281"
+        ],
+        [
+          321,
+          "\u547c\u548c\u6d69\u7279 (huhehaote) - 321"
+        ],
+        [
+          230,
+          "\u963f\u62c9\u5584\u76df (alashanmeng) - 230"
+        ],
+        [
+          229,
+          "\u5305\u5934 (baotou) - 229"
+        ],
+        [
+          169,
+          "\u5df4\u5f66\u6dd6\u5c14 (bayannaoer) - 169"
+        ],
+        [
+          297,
+          "\u8d64\u5cf0 (chifeng) - 297"
+        ],
+        [
+          283,
+          "\u9102\u5c14\u591a\u65af (eerduosi) - 283"
+        ],
+        [
+          61,
+          "\u547c\u4f26\u8d1d\u5c14 (hulunbeier) - 61"
+        ],
+        [
+          64,
+          "\u901a\u8fbd (tongliao) - 64"
+        ],
+        [
+          123,
+          "\u4e4c\u6d77 (wuhai) - 123"
+        ],
+        [
+          168,
+          "\u4e4c\u5170\u5bdf\u5e03 (wulanchabu) - 168"
+        ],
+        [
+          63,
+          "\u9521\u6797\u90ed\u52d2\u76df (xilinguolemeng) - 63"
+        ],
+        [
+          62,
+          "\u5174\u5b89\u76df (xinganmeng) - 62"
+        ],
+        [
+          360,
+          "\u94f6\u5ddd (yinchuan) - 360"
+        ],
+        [
+          246,
+          "\u56fa\u539f (guyuan) - 246"
+        ],
+        [
+          335,
+          "\u77f3\u5634\u5c71 (shizuishan) - 335"
+        ],
+        [
+          322,
+          "\u5434\u5fe0 (wuzhong) - 322"
+        ],
+        [
+          181,
+          "\u4e2d\u536b (zhongwei) - 181"
+        ],
+        [
+          66,
+          "\u897f\u5b81 (xining) - 66"
+        ],
+        [
+          72,
+          "\u679c\u6d1b\u85cf\u65cf\u81ea\u6cbb\u5dde (guoluozhou) - 72"
+        ],
+        [
+          69,
+          "\u6d77\u4e1c\u5e02 (haidong) - 69"
+        ],
+        [
+          67,
+          "\u6d77\u5317\u85cf\u65cf\u81ea\u6cbb\u5dde (haibeizhou) - 67"
+        ],
+        [
+          68,
+          "\u6d77\u5357\u85cf\u65cf\u81ea\u6cbb\u5dde (hainanzhou) - 68"
+        ],
+        [
+          65,
+          "\u6d77\u897f\u8499\u53e4\u65cf\u85cf\u65cf\u81ea\u6cbb\u5dde (haixizhou) - 65"
+        ],
+        [
+          70,
+          "\u9ec4\u5357\u85cf\u65cf\u81ea\u6cbb\u5dde (huangnanzhou) - 70"
+        ],
+        [
+          71,
+          "\u7389\u6811\u85cf\u65cf\u81ea\u6cbb\u5dde (yushuzhou) - 71"
+        ],
+        [
+          288,
+          "\u6d4e\u5357 (jinan) - 288"
+        ],
+        [
+          235,
+          "\u6ee8\u5dde (binzhou) - 235"
+        ],
+        [
+          174,
+          "\u4e1c\u8425 (dongying) - 174"
+        ],
+        [
+          372,
+          "\u5fb7\u5dde (dezhou) - 372"
+        ],
+        [
+          353,
+          "\u83cf\u6cfd (heze) - 353"
+        ],
+        [
+          286,
+          "\u6d4e\u5b81 (jining) - 286"
+        ],
+        [
+          366,
+          "\u804a\u57ce (liaocheng) - 366"
+        ],
+        [
+          234,
+          "\u4e34\u6c82 (linyi) - 234"
+        ],
+        [
+          236,
+          "\u9752\u5c9b (qingdao) - 236"
+        ],
+        [
+          173,
+          "\u65e5\u7167 (rizhao) - 173"
+        ],
+        [
+          325,
+          "\u6cf0\u5b89 (taian) - 325"
+        ],
+        [
+          175,
+          "\u5a01\u6d77 (weihai) - 175"
+        ],
+        [
+          287,
+          "\u6f4d\u574a (weifang) - 287"
+        ],
+        [
+          326,
+          "\u70df\u53f0 (yantai) - 326"
+        ],
+        [
+          172,
+          "\u67a3\u5e84 (zaozhuang) - 172"
+        ],
+        [
+          354,
+          "\u6dc4\u535a (zibo) - 354"
+        ],
+        [
+          176,
+          "\u592a\u539f (taiyuan) - 176"
+        ],
+        [
+          356,
+          "\u957f\u6cbb (changzhi) - 356"
+        ],
+        [
+          355,
+          "\u5927\u540c (datong) - 355"
+        ],
+        [
+          290,
+          "\u664b\u57ce (jincheng) - 290"
+        ],
+        [
+          238,
+          "\u664b\u4e2d (jinzhong) - 238"
+        ],
+        [
+          368,
+          "\u4e34\u6c7e (linfen) - 368"
+        ],
+        [
+          327,
+          "\u5415\u6881 (lvliang) - 327"
+        ],
+        [
+          237,
+          "\u6714\u5dde (shuozhou) - 237"
+        ],
+        [
+          367,
+          "\u5ffb\u5dde (xinzhou) - 367"
+        ],
+        [
+          357,
+          "\u9633\u6cc9 (yangquan) - 357"
+        ],
+        [
+          328,
+          "\u8fd0\u57ce (yuncheng) - 328"
+        ],
+        [
+          233,
+          "\u897f\u5b89 (xian) - 233"
+        ],
+        [
+          324,
+          "\u5b89\u5eb7 (ankang) - 324"
+        ],
+        [
+          171,
+          "\u5b9d\u9e21 (baoji) - 171"
+        ],
+        [
+          352,
+          "\u6c49\u4e2d (hanzhong) - 352"
+        ],
+        [
+          285,
+          "\u5546\u6d1b (shangluo) - 285"
+        ],
+        [
+          232,
+          "\u94dc\u5ddd (tongchuan) - 232"
+        ],
+        [
+          170,
+          "\u6e2d\u5357 (weinan) - 170"
+        ],
+        [
+          323,
+          "\u54b8\u9633 (xianyang) - 323"
+        ],
+        [
+          284,
+          "\u5ef6\u5b89 (yanan) - 284"
+        ],
+        [
+          231,
+          "\u6986\u6797 (yulin) - 231"
+        ],
+        [
+          75,
+          "\u6210\u90fd (chengdu) - 75"
+        ],
+        [
+          185,
+          "\u963f\u575d\u85cf\u65cf\u7f8c\u65cf\u81ea\u6cbb\u5dde (abazhou) - 185"
+        ],
+        [
+          239,
+          "\u5df4\u4e2d (bazhong) - 239"
+        ],
+        [
+          369,
+          "\u8fbe\u5dde (dazhou) - 369"
+        ],
+        [
+          74,
+          "\u5fb7\u9633 (deyang) - 74"
+        ],
+        [
+          73,
+          "\u7518\u5b5c\u85cf\u65cf\u81ea\u6cbb\u5dde (ganzizhou) - 73"
+        ],
+        [
+          241,
+          "\u5e7f\u5b89 (guangan) - 241"
+        ],
+        [
+          329,
+          "\u5e7f\u5143 (guangyuan) - 329"
+        ],
+        [
+          79,
+          "\u4e50\u5c71 (leshan) - 79"
+        ],
+        [
+          80,
+          "\u51c9\u5c71\u5f5d\u65cf\u81ea\u6cbb\u5dde (liangshanzhou) - 80"
+        ],
+        [
+          331,
+          "\u6cf8\u5dde (luzhou) - 331"
+        ],
+        [
+          291,
+          "\u5357\u5145 (nanchong) - 291"
+        ],
+        [
+          77,
+          "\u7709\u5c71 (meishan) - 77"
+        ],
+        [
+          240,
+          "\u7ef5\u9633 (mianyang) - 240"
+        ],
+        [
+          248,
+          "\u5185\u6c5f (neijiang) - 248"
+        ],
+        [
+          81,
+          "\u6500\u679d\u82b1 (panzhihua) - 81"
+        ],
+        [
+          330,
+          "\u9042\u5b81 (suining) - 330"
+        ],
+        [
+          76,
+          "\u96c5\u5b89 (yaan) - 76"
+        ],
+        [
+          186,
+          "\u5b9c\u5bbe (yibin) - 186"
+        ],
+        [
+          242,
+          "\u8d44\u9633 (ziyang) - 242"
+        ],
+        [
+          78,
+          "\u81ea\u8d21 (zigong) - 78"
+        ],
+        [
+          100,
+          "\u62c9\u8428 (lasa) - 100"
+        ],
+        [
+          103,
+          "\u963f\u91cc\u5730\u533a (ali) - 103"
+        ],
+        [
+          99,
+          "\u660c\u90fd\u5e02 (changdu) - 99"
+        ],
+        [
+          98,
+          "\u6797\u829d\u5e02 (linzhi) - 98"
+        ],
+        [
+          101,
+          "\u90a3\u66f2\u5730\u533a (naqu) - 101"
+        ],
+        [
+          102,
+          "\u65e5\u5580\u5219\u5e02 (rikaze) - 102"
+        ],
+        [
+          97,
+          "\u5c71\u5357\u5730\u533a (shannan) - 97"
+        ],
+        [
+          92,
+          "\u4e4c\u9c81\u6728\u9f50 (wulumuqi) - 92"
+        ],
+        [
+          731,
+          "\u963f\u62c9\u5c14 (alaer) - 731"
+        ],
+        [
+          85,
+          "\u963f\u514b\u82cf\u5730\u533a (akesu) - 85"
+        ],
+        [
+          96,
+          "\u963f\u52d2\u6cf0\u5730\u533a (aletai) - 96"
+        ],
+        [
+          86,
+          "\u5df4\u97f3\u90ed\u695e\u8499\u53e4\u81ea\u6cbb\u5dde (bayinguoleng) - 86"
+        ],
+        [
+          88,
+          "\u535a\u5c14\u5854\u62c9\u8499\u53e4\u81ea\u6cbb\u5dde (boertalazhou) - 88"
+        ],
+        [
+          93,
+          "\u660c\u5409\u56de\u65cf\u81ea\u6cbb\u5dde (changjizhou) - 93"
+        ],
+        [
+          91,
+          "\u54c8\u5bc6 (hami) - 91"
+        ],
+        [
+          82,
+          "\u548c\u7530\u5730\u533a (hetian) - 82"
+        ],
+        [
+          83,
+          "\u5580\u4ec0\u5730\u533a (kashi) - 83"
+        ],
+        [
+          95,
+          "\u514b\u62c9\u739b\u4f9d (kelamayi) - 95"
+        ],
+        [
+          84,
+          "\u514b\u5b5c\u52d2\u82cf\u67ef\u5c14\u514b\u5b5c\u81ea\u6cbb\u5dde (kezilesuzhou) - 84"
+        ],
+        [
+          770,
+          "\u77f3\u6cb3\u5b50 (shihezi) - 770"
+        ],
+        [
+          94,
+          "\u5854\u57ce\u5730\u533a (tacheng) - 94"
+        ],
+        [
+          792,
+          "\u56fe\u6728\u8212\u514b (tumushuke) - 792"
+        ],
+        [
+          89,
+          "\u5410\u9c81\u756a\u5730\u533a (tulufan) - 89"
+        ],
+        [
+          789,
+          "\u4e94\u5bb6\u6e20 (wujiaqu) - 789"
+        ],
+        [
+          90,
+          "\u4f0a\u7281\u54c8\u8428\u514b\u81ea\u6cbb\u5dde (yilizhou) - 90"
+        ],
+        [
+          3301,
+          "\u5317\u5c6f (beitun) - 3301"
+        ],
+        [
+          3302,
+          "\u94c1\u95e8\u5173 (tiemenguan) - 3302"
+        ],
+        [
+          3303,
+          "\u53cc\u6cb3 (shuanghe) - 3303"
+        ],
+        [
+          3304,
+          "\u53ef\u514b\u8fbe\u62c9 (kekedala) - 3304"
+        ],
+        [
+          3305,
+          "\u6606\u7389 (kunyu) - 3305"
+        ],
+        [
+          3370,
+          "\u80e1\u6768\u6cb3 (huyanghe) - 3370"
+        ],
+        [
+          104,
+          "\u6606\u660e (kunming) - 104"
+        ],
+        [
+          112,
+          "\u4fdd\u5c71 (baoshan) - 112"
+        ],
+        [
+          105,
+          "\u695a\u96c4\u5f5d\u65cf\u81ea\u6cbb\u5dde (chuxiongzhou) - 105"
+        ],
+        [
+          111,
+          "\u5927\u7406\u767d\u65cf\u81ea\u6cbb\u5dde (dalizhou) - 111"
+        ],
+        [
+          116,
+          "\u5fb7\u5b8f\u50a3\u65cf\u666f\u9887\u65cf\u81ea\u6cbb\u5dde (dehongzhou) - 116"
+        ],
+        [
+          115,
+          "\u8fea\u5e86\u85cf\u65cf\u81ea\u6cbb\u5dde (diqingzhou) - 115"
+        ],
+        [
+          107,
+          "\u7ea2\u6cb3\u54c8\u5c3c\u65cf\u5f5d\u65cf\u81ea\u6cbb\u5dde (honghezhou) - 107"
+        ],
+        [
+          114,
+          "\u4e3d\u6c5f (lijiang) - 114"
+        ],
+        [
+          110,
+          "\u4e34\u6ca7 (lincang) - 110"
+        ],
+        [
+          113,
+          "\u6012\u6c5f\u5088\u50f3\u65cf\u81ea\u6cbb\u5dde (nujiangzhou) - 113"
+        ],
+        [
+          108,
+          "\u666e\u6d31 (puer) - 108"
+        ],
+        [
+          249,
+          "\u66f2\u9756 (qujing) - 249"
+        ],
+        [
+          336,
+          "\u662d\u901a (zhaotong) - 336"
+        ],
+        [
+          177,
+          "\u6587\u5c71\u58ee\u65cf\u82d7\u65cf\u81ea\u6cbb\u5dde (wenshan) - 177"
+        ],
+        [
+          109,
+          "\u897f\u53cc\u7248\u7eb3\u50a3\u65cf\u81ea\u6cbb\u5dde (xishuangbanna) - 109"
+        ],
+        [
+          106,
+          "\u7389\u6eaa (yuxi) - 106"
+        ],
+        [
+          179,
+          "\u676d\u5dde (hangzhou) - 179"
+        ],
+        [
+          294,
+          "\u6e56\u5dde (huzhou) - 294"
+        ],
+        [
+          334,
+          "\u5609\u5174 (jiaxing) - 334"
+        ],
+        [
+          333,
+          "\u91d1\u534e (jinhua) - 333"
+        ],
+        [
+          292,
+          "\u4e3d\u6c34 (lishui) - 292"
+        ],
+        [
+          180,
+          "\u5b81\u6ce2 (ningbo) - 180"
+        ],
+        [
+          243,
+          "\u8862\u5dde (quzhou) - 243"
+        ],
+        [
+          293,
+          "\u7ecd\u5174 (shaoxing) - 293"
+        ],
+        [
+          244,
+          "\u53f0\u5dde (taizhou) - 244"
+        ],
+        [
+          178,
+          "\u6e29\u5dde (wenzhou) - 178"
+        ],
+        [
+          245,
+          "\u821f\u5c71 (zhoushan) - 245"
+        ],
+        [
+          9002,
+          "\u53f0\u5317 (taibei) - 9002"
+        ],
+        [
+          9019,
+          "\u9ad8\u96c4 (gaoxiong) - 9019"
+        ],
+        [
+          9017,
+          "\u53f0\u4e2d (taizhong) - 9017"
+        ],
+        [
+          9016,
+          "\u53f0\u5357 (tainan) - 9016"
+        ],
+        [
+          9010,
+          "\u65b0\u5317 (xinbei) - 9010"
+        ],
+        [
+          9011,
+          "\u57fa\u9686 (jilong) - 9011"
+        ],
+        [
+          9006,
+          "\u65b0\u7af9\u53bf (xinzhuxian) - 9006"
+        ],
+        [
+          9013,
+          "\u5609\u4e49\u53bf (jiayixian) - 9013"
+        ],
+        [
+          9001,
+          "\u6843\u56ed (taoyuan) - 9001"
+        ],
+        [
+          9018,
+          "\u65b0\u7af9\u5e02 (xinzhushi) - 9018"
+        ],
+        [
+          9004,
+          "\u5609\u4e49\u5e02 (jiayishi) - 9004"
+        ],
+        [
+          9020,
+          "\u82d7\u6817 (miaoli) - 9020"
+        ],
+        [
+          9005,
+          "\u5f70\u5316 (zhanghua) - 9005"
+        ],
+        [
+          9003,
+          "\u5357\u6295 (nantou) - 9003"
+        ],
+        [
+          9014,
+          "\u4e91\u6797 (yunlin) - 9014"
+        ],
+        [
+          9012,
+          "\u5c4f\u4e1c (pingdong) - 9012"
+        ],
+        [
+          9009,
+          "\u5b9c\u5170 (yilan) - 9009"
+        ],
+        [
+          9015,
+          "\u82b1\u83b2 (hualian) - 9015"
+        ],
+        [
+          9008,
+          "\u53f0\u4e1c (taidong) - 9008"
+        ],
+        [
+          9007,
+          "\u6f8e\u6e56 (penghu) - 9007"
+        ],
+        [
+          2912,
+          "\u9999\u6e2f (xianggang) - 2912"
+        ],
+        [
+          2911,
+          "\u6fb3\u95e8 (aomen) - 2911"
+        ]
+      ],
+      "description": "Parameter defines the city to search in, with its Baidu Maps city code (e.g., `131` for Beijing, `289` for Shanghai, or `257` for Guangzhou). Head to the Baidu Maps cities page for the cities of China. Cities in other countries have codes too (e.g., `49872` for Paris): a search near their coordinates returns it in `search_information.city_code`. Without it, Baidu Maps searches in the city named in q, in China or abroad, or lists the cities with results in `cities`. With lat and lon, it searches in the city at the coordinates. With lat and lon, the city must be the one where the coordinates are: Baidu Maps only searches in the city of c, even when the coordinates are elsewhere.",
+      "group": "geographic_location"
+    },
+    "lat": {
+      "type": "number",
+      "description": "Parameter defines the latitude to search near (e.g., `39.908776`). Results are the places near these coordinates, and their `distance` field says how far each one is. In China, including Hong Kong, Macau and Taiwan, Baidu Maps uses coordinates shifted a few hundred meters from GPS coordinates, like all maps of mainland China (a system called GCJ-02). Parameter is required when using lon parameter. c is optional with coordinates: without it, the city at the coordinates is used. If it's set, it must be the city where the coordinates are.",
+      "group": "geographic_location"
+    },
+    "lon": {
+      "type": "number",
+      "description": "Parameter defines the longitude to search near (e.g., `116.39759`). Results are the places near these coordinates, and their `distance` field says how far each one is. In China, including Hong Kong, Macau and Taiwan, Baidu Maps uses coordinates shifted a few hundred meters from GPS coordinates, like all maps of mainland China (a system called GCJ-02). Parameter is required when using lat parameter. c is optional with coordinates: without it, the city at the coordinates is used. If it's set, it must be the city where the coordinates are.",
+      "group": "geographic_location"
+    },
+    "page": {
+      "type": "number",
+      "description": "Value is used to get results on a specific page. (e.g., `1` (default) is the first page of results, `2` is the 2nd page of results, `3` is the 3rd page of results, etc.). Baidu Maps returns up to 10 results per page.",
+      "group": "pagination"
+    }
+  },
+  "common_params": {
+    "engine": {
+      "required": true,
+      "description": "Set parameter to `baidu_maps` to use the Baidu Maps API engine.",
+      "group": "serpapi_parameters"
+    },
+    "no_cache": {
+      "type": "checkbox",
+      "description": "Parameter will force SerpApi to fetch the Baidu Maps results even if a cached version is already present. A cache is served only if the query and all parameters are exactly the same. Cache expires after 1h. Cached searches are free, and are not counted towards your searches per month. It can be set to `false` (default) to allow results from the cache, or `true` to disallow results from the cache. no_cache and async parameters should not be used together.",
+      "group": "serpapi_parameters"
+    },
+    "async": {
+      "description": "Parameter defines the way you want to submit your search to SerpApi. It can be set to `false` (default) to open an HTTP connection and keep it open until you got your search results, or `true` to just submit your search to SerpApi and retrieve them later. In this case, you'll need to use our Searches Archive API to retrieve your results. async and no_cache parameters should not be used together. async should not be used on accounts with Ludicrous Speed enabled.",
+      "group": "serpapi_parameters"
+    },
+    "zero_trace": {
+      "description": "Enterprise only. Parameter enables ZeroTrace mode. It can be set to `false` (default) or `true`. Enable this mode to skip storing search parameters, search files, and search metadata on our servers. This may make debugging more difficult.",
+      "group": "serpapi_parameters"
+    },
+    "api_key": {
+      "required": true,
+      "description": "Parameter defines the SerpApi private key to use.",
+      "group": "serpapi_parameters"
+    },
+    "output": {
+      "description": "Parameter defines the format of the result. It can be set to `json` (default) to get a structured JSON of the results, `html` to get the raw HTML retrieved, or `md` to get a markdown-formatted version optimized for LLMs and AI agents.",
+      "group": "serpapi_parameters"
+    },
+    "json_restrictor": {
+      "description": "Parameter defines the fields you want to include in the output, reducing payload size for faster response. See the JSON Restrictor documentation for more details.",
+      "group": "serpapi_parameters"
+    }
+  }
+}
