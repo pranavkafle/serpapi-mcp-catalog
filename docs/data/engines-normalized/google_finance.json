@@ -3,7 +3,7 @@
   "params": {
     "q": {
       "required": true,
-      "description": "Parameter defines the query you want to search. It can be a stock, index, mutual fund, currency or futures.",
+      "description": "Parameter defines the query you want to search. It can be a stock, index, mutual fund, currency or futures. Head to the Google Finance Autocomplete API to find the query for a company name or a keyword.",
       "group": "search_query"
     },
     "hl": {

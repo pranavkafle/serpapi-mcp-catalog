@@ -56,12 +56,7 @@
     },
     "include_markdown": {
       "type": "checkbox",
-      "description": "Parameter defines whether to add the page's main content as Markdown in `text_content.markdown`. Default: `false`.",
-      "group": "fetch_settings"
-    },
-    "include_inline_assets": {
-      "type": "checkbox",
-      "description": "Parameter defines whether to include inline `",
+      "description": "Parameter defines whether to include the page's main content as Markdown in `markdown`. Default: `true`.",
       "group": "fetch_settings"
     }
   },
