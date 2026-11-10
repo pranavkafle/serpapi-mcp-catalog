@@ -966,7 +966,7 @@
         "zh-tw",
         "zu-za"
       ],
-      "description": "Parameter defines the language to use for the Google Jobs search. It's a two or three-letter language code. (e.g., `en` for English, `es` for Spanish, or `fr` for French), optionally followed by a two-letter or three-digit region code (e.g., `en-gb` for British English, or `es-419` for Latin American Spanish). Head to the Google languages page for a full list of supported Google languages.",
+      "description": "Parameter defines the language to use for the Google Jobs search. It's a two or three-letter language code. (e.g., `en` for English, `es` for Spanish, or `fr` for French), optionally followed by a two-letter or three-digit region code (e.g., `en-gb` for British English, or `es-419` for Latin American Spanish). Head to the Google languages page for a full list of supported Google languages. Searches fall back to English (`en`) when Google has no Google Jobs page in the requested or default language, such as Polish or Romanian. Send `hl=en` to skip the extra tries.",
       "group": "localization"
     },
     "next_page_token": {
