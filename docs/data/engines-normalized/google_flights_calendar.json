@@ -1007,7 +1007,7 @@
       "group": "advanced_google_flights_calendar_parameters"
     },
     "date_range_start": {
-      "description": "Parameter defines the start date of the date range. The format is YYYY-MM-DD. e.g. `2026-11-13` Default to today's date. When fixed_outbound_date is set to `true`, this date is also used as the outbound date.",
+      "description": "Parameter defines the start date of the date range. The format is YYYY-MM-DD. e.g. `2026-11-14` Default to today's date. When fixed_outbound_date is set to `true`, this date is also used as the outbound date.",
       "group": "advanced_google_flights_calendar_parameters"
     },
     "date_range_end": {
@@ -1091,11 +1091,11 @@
       "group": "advanced_filters"
     },
     "exclude_airlines": {
-      "description": "Parameter defines the airline codes to be excluded. Split multiple airlines with comma. It can't be used together with `include_airlines`. Each airline code should be a 2-character IATA code consisting of either two uppercase letters or one uppercase letter and one digit. You can search for airline codes on IATA. For example, `UA` is United Airlines. Additionally, alliances can be also included here: `STAR_ALLIANCE` - Star Alliance `SKYTEAM` - SkyTeam `ONEWORLD` - Oneworld exclude_airlines and include_airlines parameters can't be used together.",
+      "description": "Parameter defines the airline codes to be excluded. Split multiple airlines with comma. Each airline code should be a 2-character IATA code consisting of either two uppercase letters or one uppercase letter and one digit. You can search for airline codes on IATA. For example, `UA` is United Airlines. Additionally, alliances can be also included here: `STAR_ALLIANCE` - Star Alliance `SKYTEAM` - SkyTeam `ONEWORLD` - Oneworld exclude_airlines and include_airlines parameters can't be used together.",
       "group": "advanced_filters"
     },
     "include_airlines": {
-      "description": "Parameter defines the airline codes to be included. Split multiple airlines with comma. It can't be used together with `exclude_airlines`. Each airline code should be a 2-character IATA code consisting of either two uppercase letters or one uppercase letter and one digit. You can search for airline codes on IATA. For example, `UA` is United Airlines. Additionally, alliances can be also included here: `STAR_ALLIANCE` - Star Alliance `SKYTEAM` - SkyTeam `ONEWORLD` - Oneworld exclude_airlines and include_airlines parameters can't be used together.",
+      "description": "Parameter defines the airline codes to be included. Split multiple airlines with comma. Each airline code should be a 2-character IATA code consisting of either two uppercase letters or one uppercase letter and one digit. You can search for airline codes on IATA. For example, `UA` is United Airlines. Additionally, alliances can be also included here: `STAR_ALLIANCE` - Star Alliance `SKYTEAM` - SkyTeam `ONEWORLD` - Oneworld exclude_airlines and include_airlines parameters can't be used together.",
       "group": "advanced_filters"
     },
     "outbound_times": {
