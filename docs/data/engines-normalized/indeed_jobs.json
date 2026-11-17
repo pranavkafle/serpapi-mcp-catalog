@@ -7,7 +7,7 @@
       "group": "search_query"
     },
     "l": {
-      "description": "Parameter defines the location you want to search jobs in. You can use anything that you would use in the \"Where\" box of a regular Indeed job search (e.g., `New York, NY`, `Austin, TX`, `94103`, or `Remote`).",
+      "description": "Parameter defines the location you want to search jobs in. You can use anything that you would use in the \"Where\" box of a regular Indeed job search (e.g., `New York, NY`, `Austin, TX`, `94103`, or `Remote`). Only locations in the United States are supported.",
       "group": "geographic_location"
     },
     "radius": {
