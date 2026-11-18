@@ -162,6 +162,7 @@
     "yelp_reviews",
     "youtube",
     "youtube_channel",
+    "youtube_music",
     "youtube_video",
     "youtube_video_transcript",
     "zillow"
