@@ -33,10 +33,8 @@
         "nl-nl",
         "en-nz",
         "no-no",
-        "zh-cn",
         "pl-pl",
         "en-ph",
-        "ru-ru",
         "en-za",
         "es-es",
         "sv-se",
@@ -48,7 +46,7 @@
         "en-us",
         "es-us"
       ],
-      "description": "The market where the results come from (e.g. `en-US`). Typically, mkt is the country where the user is making the request from. However, it could be a different country if the user is not located in a country where Bing Shopping API delivers results. The market must be in the form -. For example, en-US. The string is case insensitive. For a list of possible market values, see Market Codes. NOTE: If known, you are encouraged to always specify the market. Specifying the market helps Bing route the request and return an appropriate and optimal response. If you specify a market that is not listed in Market Codes, Bing Shopping API uses a best fit market code based on an internal mapping that is subject to change. This parameter and the cc query parameter are mutually exclusive\u2014do not specify both.",
+      "description": "The market where the results come from (e.g. `en-US`). Typically, mkt is the country where the user is making the request from. However, it could be a different country if the user is not located in a country where Bing Shopping API delivers results. The market must be in the form -. For example, en-US. The string is case insensitive. For a list of possible market values, see Market Codes. NOTE: If known, you are encouraged to always specify the market. Specifying the market helps Bing route the request and return an appropriate and optimal response. Bing Shopping is not available in the People's republic of China (`zh-cn`) or Russia (`ru-ru`), and if you specify a market that is not listed in Market Codes, the Bing Shopping API uses a best fit market code based on an internal mapping that is subject to change. This parameter and the cc query parameter are mutually exclusive\u2014do not specify both.",
       "group": "geographic_location"
     },
     "cc": {
@@ -76,11 +74,9 @@
         "NL",
         "NZ",
         "NO",
-        "CN",
         "PL",
         "PT",
         "PH",
-        "RU",
         "SA",
         "ZA",
         "ES",
@@ -91,7 +87,7 @@
         "GB",
         "US"
       ],
-      "description": "Parameter defines the country to search from. It follows the 2-character ISO_3166-1 format. (e.g., `us` for United States, `de` for Germany, `gb` for United Kingdom, etc.). This parameter and the mkt query parameter are mutually exclusive\u2014do not specify both. For countries with more than one language (e.g. CH, BE), generally the mkt param is better to choose the language.",
+      "description": "Parameter defines the country to search from. It follows the 2-character ISO_3166-1 format. (e.g., `us` for United States, `de` for Germany, `gb` for United Kingdom, etc.). The Bing Shopping API does not support `cn` (the People's republic of China) or `ru` (Russia) as Bing Shopping is not available in these locations. This parameter and the mkt query parameter are mutually exclusive\u2014do not specify both. For countries with more than one language (e.g. CH, BE), generally the mkt param is better to choose the language.",
       "group": "localization"
     },
     "efirst": {
