@@ -357,8 +357,18 @@
       "description": "Parameter is used for sorting results. Available options: `relevanceblender` - Featured (default) `price-asc-rank` - Price: Low to High `price-desc-rank` - Price: High to Low `review-rank` - Avg. Customer Review `date-desc-rank` - Newest Arrivals `exact-aware-popularity-rank` - Best Sellers",
       "group": "advanced_amazon_parameters"
     },
+    "boost_ads": {
+      "type": "checkbox",
+      "description": "Set to `true` to increase the chance of receiving sponsored organic results. Sponsored results are not guaranteed, and enabling this option may increase response time. By default, this option is set to `false`.",
+      "group": "advanced_amazon_parameters"
+    },
     "node": {
       "description": "Parameter specifies the category for Amazon search results. You can find the appropriate node value by browsing Amazon\u2019s website and accessing a specific category. The node ID is typically included in the URL after the format `node=[NODE ID]`. For example, on Amazon.com, the node for Smart Home is `6563140011`, and on Amazon.co.uk, the node for Fashion is `11961407031`. Use this node value to filter search results by category. This parameter can't be used with the k parameter. Head to Amazon Category Nodes for a full list of supported Amazon Categories.",
+      "group": "advanced_filters"
+    },
+    "fs": {
+      "type": "checkbox",
+      "description": "Parameter defines whether to request the full results page of a category instead of its landing page. Some categories return a landing page with no `organic_results`. It can be set to `true` to get the full results page, or `false` to get the category landing page (default). This parameter is used with the node parameter.",
       "group": "advanced_filters"
     },
     "rh": {

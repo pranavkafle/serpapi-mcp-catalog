@@ -78,7 +78,7 @@
     },
     "count": {
       "type": "number",
-      "description": "Parameter controls the number of results per page. This parameter is only a suggestion and might not reflect the returned results. Maximum results per page is `30`",
+      "description": "Parameter controls the number of results per page. This parameter is only a suggestion and might not reflect the returned results. Maximum results per page is `25`",
       "group": "pagination"
     }
   },
