@@ -1,0 +1,118 @@
+{
+  "engine": "bbb",
+  "params": {
+    "q": {
+      "required": true,
+      "description": "Parameter defines the query you want to search. It can be a business name or a category, anything that you would use in a regular BBB search (e.g., `plumber`, `roto rooter`, or `roofing`).",
+      "group": "search_query"
+    },
+    "location": {
+      "description": "Parameter defines the location to search near, in the United States or Canada. It can be a city with its state or province, or a ZIP or postal code (e.g., `Chatsworth, CA`, `91311`, or `Toronto, ON`). Head to the BBB locations page for a list of cities. When it isn't set, businesses from anywhere are returned. Use the short form, like on the BBB website. Full names such as `Austin, Texas, United States`, used by other SerpApi APIs, aren't understood by BBB and return businesses from elsewhere. Locations BBB doesn't recognize at all return an error. The location BBB searched near is in the SerpApi JSON response: `search_parameters.location_used`.",
+      "group": "geographic_location"
+    },
+    "accredited": {
+      "type": "checkbox",
+      "description": "Parameter defines whether to only show BBB accredited businesses. It can be set to `true` or `false` (default).",
+      "group": "advanced_filters"
+    },
+    "rating": {
+      "description": "Parameter defines the BBB ratings of the businesses. It's a comma-separated list of options (e.g., `A,B`). Available options: `A` - A and above `B` - B rated `C` - C rated `D` - D rated `F` - F rated",
+      "group": "advanced_filters"
+    },
+    "distance": {
+      "type": "select",
+      "options": [
+        [
+          "5",
+          "Within 5 miles"
+        ],
+        [
+          "10",
+          "Within 10 miles"
+        ],
+        [
+          "25",
+          "Within 25 miles"
+        ],
+        [
+          "50",
+          "Within 50 miles"
+        ],
+        [
+          "100",
+          "Within 100 miles"
+        ]
+      ],
+      "description": "Parameter defines the maximum distance of the businesses from location, in miles. Available options: `5` - Within 5 miles `10` - Within 10 miles `25` - Within 25 miles `50` - Within 50 miles `100` - Within 100 miles Parameter requires location parameter.",
+      "group": "advanced_filters"
+    },
+    "category_id": {
+      "description": "Parameter defines the categories of the businesses. It's a comma-separated list of category IDs (e.g., `10113-000` for Plumber, or `10113-000,10114-000` for Plumber and Sewer Cleaning). The categories for a search are in the SerpApi JSON response: `filters.categories`.",
+      "group": "advanced_filters"
+    },
+    "state": {
+      "description": "Parameter defines the states or provinces of the businesses. It's a comma-separated list of state or province codes (e.g., `OH`, or `CA,NV`). The states for a search are in the SerpApi JSON response: `filters.states`.",
+      "group": "advanced_filters"
+    },
+    "serving_my_area": {
+      "type": "checkbox",
+      "description": "Parameter defines whether to only show businesses that serve the area of location, like BBB's \"Serving my Area\" filter. It can be set to `true` or `false` (default). Parameter requires location parameter.",
+      "group": "advanced_filters"
+    },
+    "get_a_quote": {
+      "type": "checkbox",
+      "description": "Parameter defines whether to only show businesses you can request a quote from, like BBB's \"Get a Quote\" filter. It can be set to `true` or `false` (default).",
+      "group": "advanced_filters"
+    },
+    "sort": {
+      "type": "select",
+      "options": [
+        "Relevance",
+        "Distance",
+        "Rating",
+        "AToZ",
+        "ZToA"
+      ],
+      "description": "Parameter defines the sorting order of the results. It defaults to `Relevance`. Available options: `Relevance` - Best match (default) `Distance` - Distance `Rating` - Rating `AToZ` - A-Z `ZToA` - Z-A",
+      "group": "sorting"
+    },
+    "page": {
+      "type": "number",
+      "description": "Parameter defines the page number of the results (e.g., `1` (default) is the first page of results, `2` is the 2nd page of results, etc.). BBB returns up to 15 results per page, and up to 15 pages.",
+      "group": "pagination"
+    }
+  },
+  "common_params": {
+    "engine": {
+      "required": true,
+      "description": "Set parameter to `bbb` to use the BBB API engine.",
+      "group": "serpapi_parameters"
+    },
+    "no_cache": {
+      "type": "checkbox",
+      "description": "Parameter will force SerpApi to fetch the BBB results even if a cached version is already present. A cache is served only if the query and all parameters are exactly the same. Cache expires after 1h. Cached searches are free, and are not counted towards your searches per month. It can be set to `false` (default) to allow results from the cache, or `true` to disallow results from the cache. no_cache and async parameters should not be used together.",
+      "group": "serpapi_parameters"
+    },
+    "async": {
+      "description": "Parameter defines the way you want to submit your search to SerpApi. It can be set to `false` (default) to open an HTTP connection and keep it open until you got your search results, or `true` to just submit your search to SerpApi and retrieve them later. In this case, you'll need to use our Searches Archive API to retrieve your results. async and no_cache parameters should not be used together. async should not be used on accounts with Ludicrous Speed enabled.",
+      "group": "serpapi_parameters"
+    },
+    "zero_trace": {
+      "description": "Enterprise only. Parameter enables ZeroTrace mode. It can be set to `false` (default) or `true`. Enable this mode to skip storing search parameters, search files, and search metadata on our servers. This may make debugging more difficult.",
+      "group": "serpapi_parameters"
+    },
+    "api_key": {
+      "required": true,
+      "description": "Parameter defines the SerpApi private key to use.",
+      "group": "serpapi_parameters"
+    },
+    "output": {
+      "description": "Parameter defines the format of the result. It can be set to `json` (default) to get a structured JSON of the results, `html` to get the raw HTML retrieved, or `md` to get a Markdown-formatted version optimized for LLMs and AI agents.",
+      "group": "serpapi_parameters"
+    },
+    "json_restrictor": {
+      "description": "Parameter defines the fields you want to include in the output, reducing payload size for faster response. See the JSON Restrictor documentation for more details.",
+      "group": "serpapi_parameters"
+    }
+  }
+}

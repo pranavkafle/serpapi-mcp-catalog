@@ -2,8 +2,7 @@
   "engine": "ebay_product",
   "params": {
     "product_id": {
-      "required": true,
-      "description": "Parameter defines an ID of the product to get results for. Normally, it can be found in product link from search results: `https://www.ebay.com/itm/{product_id}`",
+      "description": "Parameter defines an ID of the product to get results for. Normally, it can be found in product link from search results: `https://www.ebay.com/itm/{product_id}` Either product_id or catalog_id should be set.",
       "group": "search_query"
     },
     "ebay_domain": {
@@ -269,6 +268,10 @@
       ],
       "description": "Parameter defines the language to use for the search. Normally, it defaults to `en-US`, but some locales use localized interface (Japan, Argentina etc.) so override might be helpful. This parameter available only for `United States` eBay domain and only when `locale` is set.",
       "group": "localization"
+    },
+    "catalog_id": {
+      "description": "Parameter defines an ID of the catalog product to get results for. Normally, it can be found in catalog product link: `https://www.ebay.com/p/{catalog_id}`, or in `product_results.catalog_id` of the API response. eBay redirects some catalog products to their category page, so their searches return no results. Either product_id or catalog_id should be set.",
+      "group": "advanced_ebay_parameters"
     },
     "shipping_country": {
       "type": "select",

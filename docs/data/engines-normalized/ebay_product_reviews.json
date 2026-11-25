@@ -1,0 +1,85 @@
+{
+  "engine": "ebay_product_reviews",
+  "params": {
+    "catalog_id": {
+      "required": true,
+      "description": "Parameter defines an ID of the catalog product to get reviews for. Normally, it can be found in catalog product link: `https://www.ebay.com/p/{catalog_id}`, in `organic_results[].epid` of our eBay Search API results, or in `product_results.catalog_id` of our eBay Product API results.",
+      "group": "search_query"
+    },
+    "ebay_domain": {
+      "type": "select",
+      "options": [
+        "ebay.com",
+        "ebay.ca",
+        "ebay.co.uk",
+        "ebay.com.au",
+        "ebay.de"
+      ],
+      "description": "Parameter defines the eBay domain to use. It defaults to `ebay.com`. Available options: `ebay.com` - United States `ebay.ca` - Canada `ebay.co.uk` - United Kingdom `ebay.com.au` - Australia `ebay.de` - Germany",
+      "group": "localization"
+    },
+    "q": {
+      "description": "Parameter defines the text to search for in the reviews, like the review search box of eBay (e.g., `controller` or `battery life`).",
+      "group": "advanced_filters"
+    },
+    "condition": {
+      "type": "select",
+      "options": [
+        "new",
+        "refurbished",
+        "pre_owned"
+      ],
+      "description": "Parameter defines the condition of the items that the reviewers bought. Available options: `new` - New `refurbished` - Refurbished `pre_owned` - Pre-owned",
+      "group": "advanced_filters"
+    },
+    "sort_by": {
+      "type": "select",
+      "options": [
+        "most_relevant",
+        "most_recent",
+        "highest_rating",
+        "lowest_rating"
+      ],
+      "description": "Parameter defines the sorting order of the reviews. It defaults to `most_relevant`. Available options: `most_relevant` - Most relevant `most_recent` - Most recent `highest_rating` - Highest rating `lowest_rating` - Lowest rating",
+      "group": "sorting"
+    },
+    "page": {
+      "type": "number",
+      "description": "Parameter defines the page number of the reviews (e.g., `1` (default) is the first page of reviews, `2` is the 2nd page of reviews, etc.). Each page has up to 10 reviews. The first page can have up to 11, as eBay puts up to 2 top reviews first.",
+      "group": "pagination"
+    }
+  },
+  "common_params": {
+    "engine": {
+      "required": true,
+      "description": "Set parameter to `ebay_product_reviews` to use the eBay Product Reviews API engine.",
+      "group": "serpapi_parameters"
+    },
+    "no_cache": {
+      "type": "checkbox",
+      "description": "Parameter will force SerpApi to fetch the eBay Product Reviews results even if a cached version is already present. A cache is served only if the query and all parameters are exactly the same. Cache expires after 1h. Cached searches are free, and are not counted towards your searches per month. It can be set to `false` (default) to allow results from the cache, or `true` to disallow results from the cache. no_cache and async parameters should not be used together.",
+      "group": "serpapi_parameters"
+    },
+    "async": {
+      "description": "Parameter defines the way you want to submit your search to SerpApi. It can be set to `false` (default) to open an HTTP connection and keep it open until you got your search results, or `true` to just submit your search to SerpApi and retrieve them later. In this case, you'll need to use our Searches Archive API to retrieve your results. async and no_cache parameters should not be used together. async should not be used on accounts with Ludicrous Speed enabled.",
+      "group": "serpapi_parameters"
+    },
+    "zero_trace": {
+      "description": "Enterprise only. Parameter enables ZeroTrace mode. It can be set to `false` (default) or `true`. Enable this mode to skip storing search parameters, search files, and search metadata on our servers. This may make debugging more difficult.",
+      "group": "serpapi_parameters"
+    },
+    "api_key": {
+      "required": true,
+      "description": "Parameter defines the SerpApi private key to use.",
+      "group": "serpapi_parameters"
+    },
+    "output": {
+      "description": "Parameter defines the format of the result. It can be set to `json` (default) to get a structured JSON of the results, `html` to get the raw HTML retrieved, or `md` to get a Markdown-formatted version optimized for LLMs and AI agents.",
+      "group": "serpapi_parameters"
+    },
+    "json_restrictor": {
+      "description": "Parameter defines the fields you want to include in the output, reducing payload size for faster response. See the JSON Restrictor documentation for more details.",
+      "group": "serpapi_parameters"
+    }
+  }
+}
