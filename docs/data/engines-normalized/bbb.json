@@ -16,7 +16,7 @@
       "group": "advanced_filters"
     },
     "rating": {
-      "description": "Parameter defines the BBB ratings of the businesses. It's a comma-separated list of options (e.g., `A,B`). Available options: `A` - A and above `B` - B rated `C` - C rated `D` - D rated `F` - F rated",
+      "description": "Parameter defines the BBB ratings of the businesses. It's a comma-separated list of options (e.g., `A,B`). Each option includes the plus and minus grades of its letter (e.g., `A` returns businesses rated A+, A, or A-). Available options: `A` - A rated `B` - B rated `C` - C rated `D` - D rated `F` - F rated",
       "group": "advanced_filters"
     },
     "distance": {
