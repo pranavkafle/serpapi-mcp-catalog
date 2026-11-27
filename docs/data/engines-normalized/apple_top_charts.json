@@ -1,0 +1,419 @@
+{
+  "engine": "apple_top_charts",
+  "params": {
+    "chart": {
+      "type": "select",
+      "options": [
+        "top-free",
+        "top-paid"
+      ],
+      "description": "Parameter defines the chart to get. It defaults to `top-free`. Available options: `top-free` - Top free `top-paid` - Top paid",
+      "group": "search_query"
+    },
+    "country": {
+      "type": "select",
+      "options": [
+        "al",
+        "dz",
+        "ao",
+        "ai",
+        "ag",
+        "ar",
+        "am",
+        "au",
+        "at",
+        "az",
+        "bs",
+        "bh",
+        "bb",
+        "by",
+        "be",
+        "bz",
+        "bj",
+        "bm",
+        "bt",
+        "bo",
+        "bw",
+        "br",
+        "vg",
+        "bn",
+        "bg",
+        "bf",
+        "kh",
+        "ca",
+        "cv",
+        "ky",
+        "cl",
+        "td",
+        "cn",
+        "co",
+        "cd",
+        "cr",
+        "hr",
+        "cy",
+        "cz",
+        "dk",
+        "dm",
+        "do",
+        "ec",
+        "eg",
+        "sv",
+        "ee",
+        "fj",
+        "fi",
+        "fr",
+        "de",
+        "gm",
+        "gb",
+        "gh",
+        "gr",
+        "gd",
+        "gt",
+        "gw",
+        "gy",
+        "hn",
+        "hk",
+        "hu",
+        "is",
+        "in",
+        "id",
+        "ie",
+        "il",
+        "it",
+        "jm",
+        "jp",
+        "jo",
+        "kz",
+        "ke",
+        "kw",
+        "kg",
+        "la",
+        "lv",
+        "lb",
+        "lt",
+        "lu",
+        "mo",
+        "mk",
+        "mg",
+        "mw",
+        "my",
+        "ml",
+        "mt",
+        "mr",
+        "mu",
+        "mx",
+        "fm",
+        "md",
+        "mn",
+        "ms",
+        "mz",
+        "na",
+        "np",
+        "nl",
+        "nz",
+        "ni",
+        "ne",
+        "ng",
+        "no",
+        "om",
+        "pk",
+        "pw",
+        "pa",
+        "pg",
+        "py",
+        "pe",
+        "ph",
+        "pl",
+        "pt",
+        "qa",
+        "ro",
+        "ru",
+        "st",
+        "sa",
+        "sn",
+        "sc",
+        "sl",
+        "sg",
+        "sk",
+        "si",
+        "sb",
+        "za",
+        "kr",
+        "es",
+        "lk",
+        "kn",
+        "lc",
+        "vc",
+        "sr",
+        "sz",
+        "se",
+        "ch",
+        "tw",
+        "tj",
+        "tz",
+        "th",
+        "tt",
+        "tn",
+        "tr",
+        "tm",
+        "tc",
+        "ug",
+        "ua",
+        "ae",
+        "us",
+        "uy",
+        "uz",
+        "ve",
+        "vn",
+        "ye",
+        "zw"
+      ],
+      "description": "Parameter defines the country of the App Store to get the chart from. It's a two-letter country code (e.g., `us` (default) for the United States, `gb` for the United Kingdom, or `fr` for France). Head to the Apple Regions page for a full list of supported Apple regions.",
+      "group": "localization"
+    },
+    "platform": {
+      "type": "select",
+      "options": [
+        "iphone",
+        "ipad",
+        "mac",
+        "vision",
+        "watch",
+        "tv"
+      ],
+      "description": "Parameter defines the device platform of the chart. It defaults to `iphone`. Available options: `iphone` - iPhone `ipad` - iPad `mac` - Mac `vision` - Apple Vision Pro `watch` - Apple Watch `tv` - Apple TV",
+      "group": "advanced_parameters"
+    },
+    "category_id": {
+      "type": "select",
+      "options": [
+        [
+          "36",
+          "All apps - 36"
+        ],
+        [
+          "6018",
+          "Books - 6018"
+        ],
+        [
+          "6000",
+          "Business - 6000"
+        ],
+        [
+          "6026",
+          "Developer Tools - 6026"
+        ],
+        [
+          "6017",
+          "Education - 6017"
+        ],
+        [
+          "6016",
+          "Entertainment - 6016"
+        ],
+        [
+          "6015",
+          "Finance - 6015"
+        ],
+        [
+          "6023",
+          "Food & Drink - 6023"
+        ],
+        [
+          "6014",
+          "Games - 6014"
+        ],
+        [
+          "7001",
+          "Games: Action - 7001"
+        ],
+        [
+          "7002",
+          "Games: Adventure - 7002"
+        ],
+        [
+          "7003",
+          "Games: Casual - 7003"
+        ],
+        [
+          "7004",
+          "Games: Board - 7004"
+        ],
+        [
+          "7005",
+          "Games: Card - 7005"
+        ],
+        [
+          "7006",
+          "Games: Casino - 7006"
+        ],
+        [
+          "7009",
+          "Games: Family - 7009"
+        ],
+        [
+          "7011",
+          "Games: Music - 7011"
+        ],
+        [
+          "7012",
+          "Games: Puzzle - 7012"
+        ],
+        [
+          "7013",
+          "Games: Racing - 7013"
+        ],
+        [
+          "7014",
+          "Games: Role Playing - 7014"
+        ],
+        [
+          "7015",
+          "Games: Simulation - 7015"
+        ],
+        [
+          "7016",
+          "Games: Sports - 7016"
+        ],
+        [
+          "7017",
+          "Games: Strategy - 7017"
+        ],
+        [
+          "7018",
+          "Games: Trivia - 7018"
+        ],
+        [
+          "7019",
+          "Games: Word - 7019"
+        ],
+        [
+          "6027",
+          "Graphics & Design - 6027"
+        ],
+        [
+          "6013",
+          "Health & Fitness - 6013"
+        ],
+        [
+          "6012",
+          "Lifestyle - 6012"
+        ],
+        [
+          "6021",
+          "Magazines & Newspapers - 6021"
+        ],
+        [
+          "6020",
+          "Medical - 6020"
+        ],
+        [
+          "6011",
+          "Music - 6011"
+        ],
+        [
+          "6010",
+          "Navigation - 6010"
+        ],
+        [
+          "6009",
+          "News - 6009"
+        ],
+        [
+          "6008",
+          "Photo & Video - 6008"
+        ],
+        [
+          "6007",
+          "Productivity - 6007"
+        ],
+        [
+          "6006",
+          "Reference - 6006"
+        ],
+        [
+          "6005",
+          "Social Networking - 6005"
+        ],
+        [
+          "6024",
+          "Shopping - 6024"
+        ],
+        [
+          "6004",
+          "Sports - 6004"
+        ],
+        [
+          "6003",
+          "Travel - 6003"
+        ],
+        [
+          "6002",
+          "Utilities - 6002"
+        ],
+        [
+          "6001",
+          "Weather - 6001"
+        ]
+      ],
+      "description": "Parameter defines the category of the chart. It defaults to `36` for all apps (e.g., `6016` for Entertainment, `6014` for Games, or `7001` for Action games). Head to the Apple Categories page for a full list of supported Apple categories.",
+      "group": "advanced_parameters"
+    },
+    "age": {
+      "type": "select",
+      "options": [
+        [
+          "0",
+          "All kids"
+        ],
+        [
+          "10000",
+          "Ages 5 & under"
+        ],
+        [
+          "10001",
+          "Ages 6-8"
+        ],
+        [
+          "10002",
+          "Ages 9-11"
+        ]
+      ],
+      "description": "Parameter defines the age band of the Kids chart. Available options: `0` - All kids `10000` - Ages 5 & under `10001` - Ages 6-8 `10002` - Ages 9-11 Parameter can only be used when category_id is `36`.",
+      "group": "advanced_parameters"
+    }
+  },
+  "common_params": {
+    "engine": {
+      "required": true,
+      "description": "Set parameter to `apple_top_charts` to use the Apple Top Charts API engine.",
+      "group": "serpapi_parameters"
+    },
+    "no_cache": {
+      "type": "checkbox",
+      "description": "Parameter will force SerpApi to fetch the Apple Top Charts results even if a cached version is already present. A cache is served only if the query and all parameters are exactly the same. Cache expires after 1h. Cached searches are free, and are not counted towards your searches per month. It can be set to `false` (default) to allow results from the cache, or `true` to disallow results from the cache. no_cache and async parameters should not be used together.",
+      "group": "serpapi_parameters"
+    },
+    "async": {
+      "description": "Parameter defines the way you want to submit your search to SerpApi. It can be set to `false` (default) to open an HTTP connection and keep it open until you got your search results, or `true` to just submit your search to SerpApi and retrieve them later. In this case, you'll need to use our Searches Archive API to retrieve your results. async and no_cache parameters should not be used together. async should not be used on accounts with Ludicrous Speed enabled.",
+      "group": "serpapi_parameters"
+    },
+    "zero_trace": {
+      "description": "Enterprise only. Parameter enables ZeroTrace mode. It can be set to `false` (default) or `true`. Enable this mode to skip storing search parameters, search files, and search metadata on our servers. This may make debugging more difficult.",
+      "group": "serpapi_parameters"
+    },
+    "api_key": {
+      "required": true,
+      "description": "Parameter defines the SerpApi private key to use.",
+      "group": "serpapi_parameters"
+    },
+    "output": {
+      "description": "Parameter defines the format of the result. It can be set to `json` (default) to get a structured JSON of the results, `html` to get the raw HTML retrieved, or `md` to get a Markdown-formatted version optimized for LLMs and AI agents.",
+      "group": "serpapi_parameters"
+    },
+    "json_restrictor": {
+      "description": "Parameter defines the fields you want to include in the output, reducing payload size for faster response. See the JSON Restrictor documentation for more details.",
+      "group": "serpapi_parameters"
+    }
+  }
+}
