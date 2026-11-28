@@ -1,0 +1,204 @@
+{
+  "engine": "expedia_hotels",
+  "params": {
+    "q": {
+      "description": "Parameter defines the destination to search for. You can use anything that you would use in a regular Expedia search: a city, a region, a neighborhood, an address, or a landmark (e.g., `New York`, `Austin, TX`, or `Eiffel Tower`). The destination Expedia searched is available in `search_information.query_displayed`. Either q or region_id should be set.",
+      "group": "search_query"
+    },
+    "region_id": {
+      "description": "Parameter defines the Expedia ID of the destination to search for (e.g., `2734` for Paris, France). It's the destination the search is limited to, whatever the language of the Expedia domain, and overrides q. The region ID of a search is available in `search_information.region_id`, and in the `regionId` parameter of Expedia's search page URLs. Either q or region_id should be set.",
+      "group": "search_query"
+    },
+    "expedia_domain": {
+      "type": "select",
+      "options": [
+        "expedia.com",
+        "expedia.com.ar",
+        "expedia.com.au",
+        "expedia.at",
+        "expedia.be",
+        "expedia.com.br",
+        "expedia.ca",
+        "expedia.dk",
+        "expedia.fi",
+        "expedia.fr",
+        "expedia.de",
+        "expedia.com.hk",
+        "expedia.co.in",
+        "expedia.co.id",
+        "expedia.ie",
+        "expedia.it",
+        "expedia.co.jp",
+        "expedia.com.my",
+        "expedia.mx",
+        "expedia.nl",
+        "expedia.co.nz",
+        "expedia.no",
+        "expedia.com.ph",
+        "euro.expedia.net",
+        "expedia.sa",
+        "expedia.com.sg",
+        "expedia.co.kr",
+        "expedia.es",
+        "expedia.se",
+        "expedia.ch",
+        "expedia.com.tw",
+        "expedia.co.th",
+        "expedia.ae",
+        "expedia.co.uk",
+        "expedia.com.vn"
+      ],
+      "description": "Parameter defines the Expedia domain to use. The domain sets the language and the default currency of the results (e.g., `expedia.co.uk` for English (United Kingdom) in GBP, or `expedia.fr` for French (France) in EUR). It defaults to `expedia.com`. Head to the Expedia domains page for a full list of supported Expedia domains.",
+      "group": "localization"
+    },
+    "currency": {
+      "description": "Parameter defines the currency of the returned prices. It defaults to the currency of the Expedia domain (e.g., `USD` for `expedia.com`, or `EUR` for `expedia.fr`). Each domain supports its own currencies: head to the Expedia domains page for the currencies of each domain.",
+      "group": "localization"
+    },
+    "check_in_date": {
+      "description": "Parameter defines the check-in date. The format is YYYY-MM-DD (e.g., `2026-12-27`). It must be used together with check_out_date. When dates aren't set, Expedia returns prices for a 1-night stay two weeks ahead. These dates are available in `check_in_date` and `check_out_date` of each result.",
+      "group": "dates_and_guests"
+    },
+    "check_out_date": {
+      "description": "Parameter defines the check-out date. The format is YYYY-MM-DD (e.g., `2026-12-29`). It must be used together with check_in_date, and be later than it.",
+      "group": "dates_and_guests"
+    },
+    "adults": {
+      "type": "number",
+      "description": "Parameter defines the number of adults. It defaults to `2`.",
+      "group": "dates_and_guests"
+    },
+    "children_ages": {
+      "description": "Parameter defines the ages of the children, as a comma-separated list of ages from `0` (under 1) to `17`, one per child (e.g., `5` for a child of 5, or `5,9` for children of 5 and 9).",
+      "group": "dates_and_guests"
+    },
+    "sort_by": {
+      "type": "select",
+      "options": [
+        "recommended",
+        "price_low_to_high",
+        "price_high_to_low",
+        "distance",
+        "guest_rating",
+        "property_class"
+      ],
+      "description": "Parameter defines the sorting of the results. It defaults to `recommended`. Available options: `recommended` - Recommended `price_low_to_high` - Price: low to high `price_high_to_low` - Price: high to low `distance` - Distance from downtown `guest_rating` - Guest rating + our picks `property_class` - Property class",
+      "group": "advanced_filters"
+    },
+    "min_price": {
+      "type": "number",
+      "description": "Parameter defines the minimum nightly price, in the currency of the results (e.g., `100`).",
+      "group": "advanced_filters"
+    },
+    "max_price": {
+      "type": "number",
+      "description": "Parameter defines the maximum nightly price, in the currency of the results (e.g., `300`).",
+      "group": "advanced_filters"
+    },
+    "rating": {
+      "type": "select",
+      "options": [
+        [
+          "7",
+          "Good 7+"
+        ],
+        [
+          "8",
+          "Very good 8+"
+        ],
+        [
+          "9",
+          "Wonderful 9+"
+        ]
+      ],
+      "description": "Parameter defines the minimum guest rating, out of 10. Available options: `7` - Good 7+ `8` - Very good 8+ `9` - Wonderful 9+",
+      "group": "advanced_filters"
+    },
+    "hotel_class": {
+      "description": "Parameter defines the property classes (stars) to show. It's a comma-separated list of classes from `1` to `5` (e.g., `4,5` for 4-star and 5-star properties).",
+      "group": "advanced_filters"
+    },
+    "stay_type": {
+      "type": "select",
+      "options": [
+        "hotels",
+        "vacation_rentals"
+      ],
+      "description": "Parameter defines the type of stay to show. It defaults to any type. Available options: `hotels` - Hotels `vacation_rentals` - Vacation rentals (homes)",
+      "group": "advanced_filters"
+    },
+    "property_types": {
+      "description": "Parameter defines the property types to show. It's a comma-separated list of options (e.g., `hotel,resort`). Head to the Expedia Hotels property types page for a full list of supported property types.",
+      "group": "advanced_filters"
+    },
+    "amenities": {
+      "description": "Parameter defines the amenities the properties must have. It's a comma-separated list of options (e.g., `pool,wifi,parking`). Head to the Expedia Hotels amenities page for a full list of supported amenities.",
+      "group": "advanced_filters"
+    },
+    "accessibility_features": {
+      "description": "Parameter defines the accessibility features the properties must have. It's a comma-separated list of options (e.g., `elevator,roll_in_shower`). Head to the Expedia Hotels accessibility features page for a full list of supported accessibility features.",
+      "group": "advanced_filters"
+    },
+    "meal_plans": {
+      "description": "Parameter defines the meal plans the properties must offer. It's a comma-separated list of options (e.g., `breakfast_included,all_inclusive`). Available options: `breakfast_included` - Breakfast included `lunch_included` - Lunch included `dinner_included` - Dinner included `all_inclusive` - All inclusive",
+      "group": "advanced_filters"
+    },
+    "facet": {
+      "description": "Parameter defines Expedia's filters to apply, like neighborhoods, popular locations, brands, or traveler experiences. It's a list of filter IDs separated by `||` (e.g., `neighborhood:553248635976625704||hotel_brand:6794`), up to 30. Filter IDs are available in `filters[].options[].id` of the results when include_filters is set to `true`.",
+      "group": "advanced_filters"
+    },
+    "free_cancellation": {
+      "type": "checkbox",
+      "description": "Parameter defines whether to only show fully refundable properties. It can be set to `true` or `false` (default).",
+      "group": "booking_options"
+    },
+    "pay_later": {
+      "type": "checkbox",
+      "description": "Parameter defines whether to only show properties that can be reserved now and paid later. It can be set to `true` or `false` (default).",
+      "group": "booking_options"
+    },
+    "page": {
+      "type": "number",
+      "description": "Value is used to get results on a specific page. (e.g., `1` (default) is the first page of results, `2` is the 2nd page of results, `3` is the 3rd page of results, etc.). Expedia returns up to 100 results per page.",
+      "group": "pagination"
+    }
+  },
+  "common_params": {
+    "engine": {
+      "required": true,
+      "description": "Set parameter to `expedia_hotels` to use the Expedia Hotels API engine.",
+      "group": "serpapi_parameters"
+    },
+    "no_cache": {
+      "type": "checkbox",
+      "description": "Parameter will force SerpApi to fetch the Expedia Hotels results even if a cached version is already present. A cache is served only if the query and all parameters are exactly the same. Cache expires after 1h. Cached searches are free, and are not counted towards your searches per month. It can be set to `false` (default) to allow results from the cache, or `true` to disallow results from the cache. no_cache and async parameters should not be used together.",
+      "group": "serpapi_parameters"
+    },
+    "async": {
+      "description": "Parameter defines the way you want to submit your search to SerpApi. It can be set to `false` (default) to open an HTTP connection and keep it open until you got your search results, or `true` to just submit your search to SerpApi and retrieve them later. In this case, you'll need to use our Searches Archive API to retrieve your results. async and no_cache parameters should not be used together. async should not be used on accounts with Ludicrous Speed enabled.",
+      "group": "serpapi_parameters"
+    },
+    "zero_trace": {
+      "description": "Enterprise only. Parameter enables ZeroTrace mode. It can be set to `false` (default) or `true`. Enable this mode to skip storing search parameters, search files, and search metadata on our servers. This may make debugging more difficult.",
+      "group": "serpapi_parameters"
+    },
+    "api_key": {
+      "required": true,
+      "description": "Parameter defines the SerpApi private key to use.",
+      "group": "serpapi_parameters"
+    },
+    "output": {
+      "description": "Parameter defines the format of the result. It can be set to `json` (default) to get a structured JSON of the results, `html` to get the raw HTML retrieved, or `md` to get a Markdown-formatted version optimized for LLMs and AI agents.",
+      "group": "serpapi_parameters"
+    },
+    "json_restrictor": {
+      "description": "Parameter defines the fields you want to include in the output, reducing payload size for faster response. See the JSON Restrictor documentation for more details.",
+      "group": "serpapi_parameters"
+    },
+    "include_filters": {
+      "type": "checkbox",
+      "description": "Parameter defines whether to include the `filters` of the search in the JSON response, with the IDs to use in facet, and the `nightly_price_range` of its properties. It can be set to `true` or `false` (default).",
+      "group": "serpapi_parameters"
+    }
+  }
+}
